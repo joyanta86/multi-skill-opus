@@ -1,6 +1,8 @@
 import { ArrowDown, Download, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { useLanguage } from '@/contexts/LanguageContext';
+import profilePhoto from '@/assets/profile-photo.jpg';
 
 export const Hero = () => {
   const { t } = useLanguage();
@@ -27,6 +29,12 @@ export const Hero = () => {
 
       <div className="container relative z-10 px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+          <div className="flex justify-center mb-6">
+            <Avatar className="h-32 w-32 border-4 border-primary/30 shadow-[0_0_30px_rgba(0,188,255,0.3)]">
+              <AvatarImage src={profilePhoto} alt="Joyanta Dey" />
+              <AvatarFallback>JD</AvatarFallback>
+            </Avatar>
+          </div>
           <div className="space-y-4">
             <p className="text-lg text-muted-foreground font-mono">{t.hero.greeting}</p>
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">

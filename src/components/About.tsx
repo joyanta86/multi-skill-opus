@@ -1,6 +1,7 @@
 import { MapPin, Mail, Phone, Linkedin } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
+import profilePhoto from '@/assets/profile-photo.jpg';
 
 export const About = () => {
   const { t } = useLanguage();
@@ -23,9 +24,16 @@ export const About = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-6">
               <Card className="p-6 bg-card border-border hover:border-primary/50 transition-colors">
-                <p className="text-muted-foreground leading-relaxed text-lg">
-                  {t.about.description}
-                </p>
+                <div className="flex flex-col md:flex-row gap-6 items-start">
+                  <img 
+                    src={profilePhoto} 
+                    alt="Joyanta Dey" 
+                    className="w-32 h-32 rounded-lg object-cover border-2 border-primary/30 shadow-lg flex-shrink-0"
+                  />
+                  <p className="text-muted-foreground leading-relaxed text-lg flex-1">
+                    {t.about.description}
+                  </p>
+                </div>
               </Card>
             </div>
 
