@@ -1,0 +1,212 @@
+export const translations = {
+  en: {
+    nav: {
+      about: "About",
+      skills: "Skills",
+      experience: "Experience",
+      education: "Education",
+      certifications: "Certifications",
+      projects: "Projects",
+      references: "References",
+      contact: "Contact",
+    },
+    hero: {
+      greeting: "Hello, I'm",
+      title: "IT Infrastructure Specialist",
+      subtitle: "12+ years of expertise in IT infrastructure, desktop support, and network security",
+      cta: "Get In Touch",
+      downloadCV: "Download CV",
+    },
+    about: {
+      title: "About Me",
+      description: "Experienced IT Support Specialist with over 12 years of proven expertise in IT infrastructure, desktop support, and network security. Adept at resolving complex technical issues, managing ticketing systems, and delivering on-site and remote support. Committed to continuous learning, currently improving Finnish language skills to better integrate into local work environments.",
+      location: "Location",
+      locationValue: "Kokkola, Finland",
+      email: "Email",
+      phone: "Phone",
+      linkedin: "LinkedIn",
+    },
+    skills: {
+      title: "Technical Skills",
+      categories: {
+        server: "Server Administration",
+        cloud: "Cloud & Virtualization",
+        network: "Network & Security",
+        automation: "Automation & Scripting",
+        monitoring: "Monitoring & Support",
+      },
+    },
+    experience: {
+      title: "Work Experience",
+      present: "Present",
+    },
+    education: {
+      title: "Education",
+      degree: "Bachelor of Science",
+      field: "Computer Science & Engineering",
+      university: "State University of Bangladesh",
+      period: "2007 - 2011",
+    },
+    certifications: {
+      title: "Certifications & Training",
+    },
+    projects: {
+      title: "Key Projects",
+      viewDetails: "View Details",
+      technologies: "Technologies",
+      achievements: "Key Achievements",
+    },
+    references: {
+      title: "References",
+    },
+    contact: {
+      title: "Get In Touch",
+      subtitle: "Feel free to reach out for opportunities, collaborations, or just to connect!",
+      sendMessage: "Send Message",
+    },
+    footer: {
+      rights: "All rights reserved.",
+      builtWith: "Built with React, TypeScript & Tailwind CSS",
+    },
+  },
+  fi: {
+    nav: {
+      about: "Tietoja",
+      skills: "Taidot",
+      experience: "Kokemus",
+      education: "Koulutus",
+      certifications: "Sertifikaatit",
+      projects: "Projektit",
+      references: "Suositukset",
+      contact: "Yhteystiedot",
+    },
+    hero: {
+      greeting: "Hei, olen",
+      title: "IT-infrastruktuuriasiantuntija",
+      subtitle: "Yli 12 vuoden kokemus IT-infrastruktuurista, työpöytätuesta ja verkon turvallisuudesta",
+      cta: "Ota yhteyttä",
+      downloadCV: "Lataa CV",
+    },
+    about: {
+      title: "Minusta",
+      description: "Kokenut IT-tukiasiantuntija, jolla on yli 12 vuoden kokemus IT-infrastruktuurista, työpöytätuesta ja verkon turvallisuudesta. Taitava monimutkaisten teknisten ongelmien ratkaisemisessa, tikettijärjestelmien hallinnassa sekä paikan päällä ja etätuen tarjoamisessa. Sitoutunut jatkuvaan oppimiseen, parannellaan parhaillaan suomen kielen taitoja paremman integroitumisen vuoksi paikallisiin työympäristöihin.",
+      location: "Sijainti",
+      locationValue: "Kokkola, Suomi",
+      email: "Sähköposti",
+      phone: "Puhelin",
+      linkedin: "LinkedIn",
+    },
+    skills: {
+      title: "Tekniset taidot",
+      categories: {
+        server: "Palvelimen hallinta",
+        cloud: "Pilvi ja virtualisointi",
+        network: "Verkko ja turvallisuus",
+        automation: "Automaatio ja skriptaus",
+        monitoring: "Seuranta ja tuki",
+      },
+    },
+    experience: {
+      title: "Työkokemus",
+      present: "Nykyinen",
+    },
+    education: {
+      title: "Koulutus",
+      degree: "Kandidaatin tutkinto",
+      field: "Tietojenkäsittelytiede ja tekniikka",
+      university: "State University of Bangladesh",
+      period: "2007 - 2011",
+    },
+    certifications: {
+      title: "Sertifikaatit ja koulutus",
+    },
+    projects: {
+      title: "Keskeiset projektit",
+      viewDetails: "Näytä tiedot",
+      technologies: "Teknologiat",
+      achievements: "Keskeiset saavutukset",
+    },
+    references: {
+      title: "Suositukset",
+    },
+    contact: {
+      title: "Ota yhteyttä",
+      subtitle: "Ota rohkeasti yhteyttä mahdollisuuksista, yhteistyöstä tai vain verkostoitumisesta!",
+      sendMessage: "Lähetä viesti",
+    },
+    footer: {
+      rights: "Kaikki oikeudet pidätetään.",
+      builtWith: "Rakennettu Reactilla, TypeScriptillä ja Tailwind CSS:llä",
+    },
+  },
+  bn: {
+    nav: {
+      about: "সম্পর্কে",
+      skills: "দক্ষতা",
+      experience: "অভিজ্ঞতা",
+      education: "শিক্ষা",
+      certifications: "সার্টিফিকেট",
+      projects: "প্রকল্প",
+      references: "রেফারেন্স",
+      contact: "যোগাযোগ",
+    },
+    hero: {
+      greeting: "হ্যালো, আমি",
+      title: "আইটি অবকাঠামো বিশেষজ্ঞ",
+      subtitle: "আইটি অবকাঠামো, ডেস্কটপ সহায়তা এবং নেটওয়ার্ক নিরাপত্তায় ১২+ বছরের দক্ষতা",
+      cta: "যোগাযোগ করুন",
+      downloadCV: "সিভি ডাউনলোড",
+    },
+    about: {
+      title: "আমার সম্পর্কে",
+      description: "আইটি অবকাঠামো, ডেস্কটপ সাপোর্ট এবং নেটওয়ার্ক নিরাপত্তায় ১২ বছরেরও বেশি প্রমাণিত দক্ষতা সহ অভিজ্ঞ আইটি সাপোর্ট বিশেষজ্ঞ। জটিল প্রযুক্তিগত সমস্যা সমাধান, টিকিটিং সিস্টেম পরিচালনা এবং অন-সাইট এবং রিমোট সহায়তা প্রদানে দক্ষ। ক্রমাগত শেখার প্রতি প্রতিশ্রুতিবদ্ধ, বর্তমানে স্থানীয় কর্ম পরিবেশে আরও ভালভাবে একীভূত হওয়ার জন্য ফিনিশ ভাষা দক্ষতা উন্নত করছেন।",
+      location: "অবস্থান",
+      locationValue: "কক্কোলা, ফিনল্যান্ড",
+      email: "ইমেইল",
+      phone: "ফোন",
+      linkedin: "লিংকডইন",
+    },
+    skills: {
+      title: "প্রযুক্তিগত দক্ষতা",
+      categories: {
+        server: "সার্ভার প্রশাসন",
+        cloud: "ক্লাউড এবং ভার্চুয়ালাইজেশন",
+        network: "নেটওয়ার্ক এবং নিরাপত্তা",
+        automation: "অটোমেশন এবং স্ক্রিপ্টিং",
+        monitoring: "মনিটরিং এবং সাপোর্ট",
+      },
+    },
+    experience: {
+      title: "কাজের অভিজ্ঞতা",
+      present: "বর্তমান",
+    },
+    education: {
+      title: "শিক্ষা",
+      degree: "বিজ্ঞানে স্নাতক",
+      field: "কম্পিউটার বিজ্ঞান এবং প্রকৌশল",
+      university: "স্টেট ইউনিভার্সিটি অফ বাংলাদেশ",
+      period: "২০০৭ - ২০১১",
+    },
+    certifications: {
+      title: "সার্টিফিকেট এবং প্রশিক্ষণ",
+    },
+    projects: {
+      title: "প্রধান প্রকল্প",
+      viewDetails: "বিস্তারিত দেখুন",
+      technologies: "প্রযুক্তি",
+      achievements: "মূল অর্জন",
+    },
+    references: {
+      title: "রেফারেন্স",
+    },
+    contact: {
+      title: "যোগাযোগ করুন",
+      subtitle: "সুযোগ, সহযোগিতা বা শুধু সংযোগ করার জন্য নির্দ্বিধায় যোগাযোগ করুন!",
+      sendMessage: "বার্তা পাঠান",
+    },
+    footer: {
+      rights: "সর্বস্বত্ব সংরক্ষিত।",
+      builtWith: "React, TypeScript এবং Tailwind CSS দিয়ে নির্মিত",
+    },
+  },
+};
