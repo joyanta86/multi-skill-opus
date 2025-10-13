@@ -138,7 +138,6 @@ export const translations = {
       sendMessage: "Lähetä viesti",
       whatsappButton: "Viesti WhatsAppissa",
     },
-    },
     footer: {
       rights: "Kaikki oikeudet pidätetään.",
       builtWith: "Rakennettu Reactilla, TypeScriptillä ja Tailwind CSS:llä",
