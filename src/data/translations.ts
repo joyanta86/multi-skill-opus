@@ -24,6 +24,7 @@ export const translations = {
       locationValue: "Kokkola, Finland",
       email: "Email",
       phone: "Phone",
+      whatsapp: "WhatsApp",
       linkedin: "LinkedIn",
     },
     skills: {
@@ -63,6 +64,7 @@ export const translations = {
       title: "Get In Touch",
       subtitle: "Feel free to reach out for opportunities, collaborations, or just to connect!",
       sendMessage: "Send Message",
+      whatsappButton: "Message on WhatsApp",
     },
     footer: {
       rights: "All rights reserved.",
@@ -94,6 +96,7 @@ export const translations = {
       locationValue: "Kokkola, Suomi",
       email: "Sähköposti",
       phone: "Puhelin",
+      whatsapp: "WhatsApp",
       linkedin: "LinkedIn",
     },
     skills: {
@@ -133,6 +136,8 @@ export const translations = {
       title: "Ota yhteyttä",
       subtitle: "Ota rohkeasti yhteyttä mahdollisuuksista, yhteistyöstä tai vain verkostoitumisesta!",
       sendMessage: "Lähetä viesti",
+      whatsappButton: "Viesti WhatsAppissa",
+    },
     },
     footer: {
       rights: "Kaikki oikeudet pidätetään.",
@@ -164,6 +169,7 @@ export const translations = {
       locationValue: "কক্কোলা, ফিনল্যান্ড",
       email: "ইমেইল",
       phone: "ফোন",
+      whatsapp: "হোয়াটসঅ্যাপ",
       linkedin: "লিংকডইন",
     },
     skills: {
@@ -203,6 +209,7 @@ export const translations = {
       title: "যোগাযোগ করুন",
       subtitle: "সুযোগ, সহযোগিতা বা শুধু সংযোগ করার জন্য নির্দ্বিধায় যোগাযোগ করুন!",
       sendMessage: "বার্তা পাঠান",
+      whatsappButton: "হোয়াটসঅ্যাপে বার্তা",
     },
     footer: {
       rights: "সর্বস্বত্ব সংরক্ষিত।",

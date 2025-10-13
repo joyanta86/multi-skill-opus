@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -20,6 +20,12 @@ export const Contact = () => {
       href: 'tel:+358449874028',
     },
     {
+      icon: MessageCircle,
+      title: t.about.whatsapp,
+      value: '+358 449874028',
+      href: 'https://wa.me/358449874028',
+    },
+    {
       icon: MapPin,
       title: t.about.location,
       value: 'Kokkola, Finland',
@@ -37,7 +43,7 @@ export const Contact = () => {
             <p className="text-lg text-muted-foreground">{t.contact.subtitle}</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-4 gap-6 mb-8">
             {contactMethods.map((method, index) => {
               const Icon = method.icon;
               const content = (
@@ -82,6 +88,17 @@ export const Contact = () => {
                   <a href="mailto:likejoy@gmail.com">
                     <Send className="h-5 w-5" />
                     {t.contact.sendMessage}
+                  </a>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="gap-2 border-[#25D366] text-[#25D366] hover:bg-[#25D366]/10"
+                  asChild
+                >
+                  <a href="https://wa.me/358449874028" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="h-5 w-5" />
+                    {t.contact.whatsappButton}
                   </a>
                 </Button>
               </div>
