@@ -26,6 +26,8 @@ export const translations = {
       phone: "Phone",
       whatsapp: "WhatsApp",
       linkedin: "LinkedIn",
+      drivingLicense: "Driving License",
+      drivingLicenseValue: "Finnish Driving License A & B",
     },
     skills: {
       title: "Technical Skills",
@@ -98,6 +100,8 @@ export const translations = {
       phone: "Puhelin",
       whatsapp: "WhatsApp",
       linkedin: "LinkedIn",
+      drivingLicense: "Ajokortti",
+      drivingLicenseValue: "Suomalainen ajokortti A & B",
     },
     skills: {
       title: "Tekniset taidot",
@@ -170,6 +174,8 @@ export const translations = {
       phone: "ফোন",
       whatsapp: "হোয়াটসঅ্যাপ",
       linkedin: "লিংকডইন",
+      drivingLicense: "ড্রাইভিং লাইসেন্স",
+      drivingLicenseValue: "ফিনিশ ড্রাইভিং লাইসেন্স A ও B",
     },
     skills: {
       title: "প্রযুক্তিগত দক্ষতা",

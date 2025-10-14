@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, Linkedin } from 'lucide-react';
+import { MapPin, Mail, Phone, Linkedin, Car } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 import profilePhoto from '@/assets/profile-photo.jpg';
@@ -11,6 +11,7 @@ export const About = () => {
     { icon: Mail, label: t.about.email, value: 'likejoy@gmail.com', href: 'mailto:likejoy@gmail.com' },
     { icon: Phone, label: t.about.phone, value: '+358 449874028', href: 'tel:+358449874028' },
     { icon: Linkedin, label: t.about.linkedin, value: 'joyantadey', href: 'https://www.linkedin.com/in/joyantadey/' },
+    { icon: Car, label: t.about.drivingLicense, value: t.about.drivingLicenseValue },
   ];
 
   return (
@@ -27,7 +28,7 @@ export const About = () => {
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <img 
                     src={profilePhoto} 
-                    alt="Joyanta Dey" 
+                    alt="Joyanta Dey - IT Infrastructure Specialist with 12+ years of experience in Linux, Windows, Microsoft 365, and network systems" 
                     className="w-32 h-32 rounded-lg object-cover border-2 border-primary/30 shadow-lg flex-shrink-0"
                   />
                   <p className="text-muted-foreground leading-relaxed text-lg flex-1">

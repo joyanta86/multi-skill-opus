@@ -6,7 +6,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-card border-t border-border py-8">
+    <footer role="contentinfo" className="bg-card border-t border-border py-8">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
@@ -23,6 +23,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Email Joyanta Dey"
               >
                 <Mail className="h-5 w-5" />
               </a>
@@ -31,6 +32,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="LinkedIn profile of Joyanta Dey"
               >
                 <Linkedin className="h-5 w-5" />
               </a>

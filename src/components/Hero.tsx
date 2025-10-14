@@ -31,7 +31,7 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           <div className="flex justify-center mb-6">
             <Avatar className="h-32 w-32 border-4 border-primary/30 shadow-[0_0_30px_rgba(0,188,255,0.3)]">
-              <AvatarImage src={profilePhoto} alt="Joyanta Dey" />
+              <AvatarImage src={profilePhoto} alt="Joyanta Dey - IT Infrastructure Specialist" />
               <AvatarFallback>JD</AvatarFallback>
             </Avatar>
           </div>
