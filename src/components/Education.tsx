@@ -30,7 +30,14 @@ export const Education = () => {
                 <div className="flex flex-wrap gap-4 text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <MapPin className="h-4 w-4 text-primary" />
-                    <span>{t.education.university}</span>
+                    <a 
+                      href="https://www.sub.ac.bd/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-primary transition-colors underline-offset-4 hover:underline"
+                    >
+                      {t.education.university}
+                    </a>
                   </div>
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4 text-primary" />
