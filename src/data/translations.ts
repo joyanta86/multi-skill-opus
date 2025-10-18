@@ -11,7 +11,7 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      greeting: "Hello, I'm",
+      greeting: "",
       title: "IT Infrastructure Specialist",
       subtitle: "Helping teams build secure, reliable, and scalable IT systems since 2013.",
       cta: "Contact Me",
@@ -20,7 +20,7 @@ export const translations = {
     },
     about: {
       title: "About Me",
-      description: "I'm an experienced IT professional with a strong background in network and system administration. Over the past decade, I've managed enterprise networks, implemented Active Directory, improved cybersecurity, and led infrastructure projects in pharmaceutical and infrastructure sectors. I specialize in Windows and Linux server administration, cloud platforms (Azure & AWS), and network security solutions.",
+      description: "I'm an IT Infrastructure Specialist with over 12 years of experience in Windows, Linux, Microsoft 365, and network systems. Over the past decade, I've managed enterprise networks, implemented Active Directory, enhanced cybersecurity, and led infrastructure projects in pharmaceutical and infrastructure sectors.",
       location: "Location",
       locationValue: "Kokkola, Finland",
       email: "Email",
@@ -86,7 +86,7 @@ export const translations = {
       contact: "Yhteystiedot",
     },
     hero: {
-      greeting: "Hei, olen",
+      greeting: "",
       title: "IT-infrastruktuuriasiantuntija",
       subtitle: "Autan tiimejä rakentamaan turvallisia, luotettavia ja skaalautuvia IT-järjestelmiä vuodesta 2013 lähtien.",
       cta: "Ota yhteyttä",
@@ -95,7 +95,7 @@ export const translations = {
     },
     about: {
       title: "Minusta",
-      description: "Olen kokenut IT-ammattilainen, jolla on vahva tausta verkko- ja järjestelmähallinnossa. Viimeisen vuosikymmenen aikana olen hallinnut yritysverkkoja, toteuttanut Active Directoryn, parantanut kyberturvallisuutta ja johtanut infrastruktuuriprojekteja lääke- ja infrastruktuurisektoreilla. Olen erikoistunut Windows- ja Linux-palvelinten hallintaan, pilvialustoihin (Azure & AWS) ja verkon tietoturvaratkaisuihin.",
+      description: "Olen IT-infrastruktuuriasiantuntija, jolla on yli 12 vuoden kokemus Windowsista, Linuxista, Microsoft 365:stä ja verkkojärjestelmistä. Viimeisen vuosikymmenen aikana olen hallinnut yritysverkkoja, toteuttanut Active Directoryn, parantanut kyberturvallisuutta ja johtanut infrastruktuuriprojekteja lääke- ja infrastruktuurisektoreilla.",
       location: "Sijainti",
       locationValue: "Kokkola, Suomi",
       email: "Sähköposti",
@@ -161,7 +161,7 @@ export const translations = {
       contact: "যোগাযোগ",
     },
     hero: {
-      greeting: "হ্যালো, আমি",
+      greeting: "",
       title: "আইটি অবকাঠামো বিশেষজ্ঞ",
       subtitle: "২০১৩ সাল থেকে দল গুলিকে নিরাপদ, নির্ভরযোগ্য এবং স্কেলযোগ্য আইটি সিস্টেম তৈরি করতে সহায়তা করছি।",
       cta: "যোগাযোগ করুন",
@@ -170,7 +170,7 @@ export const translations = {
     },
     about: {
       title: "আমার সম্পর্কে",
-      description: "আমি নেটওয়ার্ক এবং সিস্টেম প্রশাসনে শক্তিশালী পটভূমি সহ একজন অভিজ্ঞ আইটি পেশাদার। গত এক দশকে, আমি এন্টারপ্রাইজ নেটওয়ার্ক পরিচালনা করেছি, অ্যাক্টিভ ডিরেক্টরি বাস্তবায়ন করেছি, সাইবার নিরাপত্তা উন্নত করেছি এবং ফার্মাসিউটিক্যাল এবং অবকাঠামো খাতে অবকাঠামো প্রকল্পের নেতৃত্ব দিয়েছি। আমি উইন্ডোজ এবং লিনাক্স সার্ভার প্রশাসন, ক্লাউড প্ল্যাটফর্ম (Azure & AWS), এবং নেটওয়ার্ক সিকিউরিটি সলিউশনে বিশেষজ্ঞ।",
+      description: "আমি একজন আইটি অবকাঠামো বিশেষজ্ঞ যার উইন্ডোজ, লিনাক্স, Microsoft 365, এবং নেটওয়ার্ক সিস্টেমে ১২ বছরেরও বেশি অভিজ্ঞতা রয়েছে। গত এক দশকে, আমি এন্টারপ্রাইজ নেটওয়ার্ক পরিচালনা করেছি, অ্যাক্টিভ ডিরেক্টরি বাস্তবায়ন করেছি, সাইবার নিরাপত্তা বৃদ্ধি করেছি এবং ফার্মাসিউটিক্যাল এবং অবকাঠামো খাতে অবকাঠামো প্রকল্পের নেতৃত্ব দিয়েছি।",
       location: "অবস্থান",
       locationValue: "কক্কোলা, ফিনল্যান্ড",
       email: "ইমেইল",

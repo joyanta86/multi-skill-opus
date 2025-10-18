@@ -36,7 +36,6 @@ export const Hero = () => {
             </Avatar>
           </div>
           <div className="space-y-4">
-            <p className="text-lg text-muted-foreground font-mono">{t.hero.greeting}</p>
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Joyanta Dey
             </h1>

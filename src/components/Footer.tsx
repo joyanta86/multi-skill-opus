@@ -14,7 +14,7 @@ export const Footer = () => {
               <p className="text-muted-foreground text-sm">
                 © {currentYear} Joyanta Dey. {t.footer.rights}
               </p>
-              <p className="text-muted-foreground text-xs mt-1">{t.footer.builtWith}</p>
+              <p className="text-muted-foreground text-xs mt-1 italic">{t.footer.builtWith}</p>
             </div>
 
             <div className="flex items-center gap-4">

@@ -9,37 +9,30 @@ export const Certifications = () => {
     {
       name: 'MikroTik Certified Network Associate (MTCNA)',
       issuer: 'MikroTik',
-      type: 'certification',
     },
     {
       name: 'MikroTik Certified Routing Engineer (MTCRE)',
       issuer: 'MikroTik',
-      type: 'certification',
     },
     {
       name: 'AWS Solution Architect',
-      issuer: 'Amazon Web Services',
-      type: 'training',
+      issuer: 'AWS',
     },
     {
       name: 'Red Hat Certified System Administrator (RHCSA)',
       issuer: 'Red Hat',
-      type: 'training',
     },
     {
       name: 'Red Hat Certified Engineer (RHCE - Ansible)',
       issuer: 'Red Hat',
-      type: 'training',
     },
     {
       name: 'Hygiene Passport Card',
       issuer: 'Finnish Food Authority',
-      type: 'certification',
     },
     {
       name: 'Occupational Safety Card',
       issuer: 'Finland',
-      type: 'certification',
     },
   ];
 
@@ -71,9 +64,6 @@ export const Certifications = () => {
                       {cert.name}
                     </h3>
                     <p className="text-sm text-muted-foreground">{cert.issuer}</p>
-                    <span className="inline-block mt-2 px-2 py-1 text-xs rounded-full bg-primary/10 text-primary">
-                      {cert.type === 'certification' ? 'Certification' : 'Training'}
-                    </span>
                   </div>
                 </div>
               </Card>
