@@ -13,13 +13,14 @@ export const translations = {
     hero: {
       greeting: "Hello, I'm",
       title: "IT Infrastructure Specialist",
-      subtitle: "12+ years of expertise in IT infrastructure, desktop support, and network security",
-      cta: "Get In Touch",
+      subtitle: "Helping teams build secure, reliable, and scalable IT systems since 2013.",
+      cta: "Contact Me",
       downloadCV: "Download CV",
+      finnishIntro: "Hei! I'm based in Kokkola, Finland, with over 12 years of experience in IT infrastructure, network security, and technical support.",
     },
     about: {
       title: "About Me",
-      description: "Experienced IT Support Specialist with over 12 years of proven expertise in IT infrastructure, desktop support, and network security. Adept at resolving complex technical issues, managing ticketing systems, and delivering on-site and remote support. Committed to continuous learning, currently improving Finnish language skills to better integrate into local work environments.",
+      description: "I'm an experienced IT professional with a strong background in network and system administration. Over the past decade, I've managed enterprise networks, implemented Active Directory, improved cybersecurity, and led infrastructure projects in pharmaceutical and infrastructure sectors. I specialize in Windows and Linux server administration, cloud platforms (Azure & AWS), and network security solutions.",
       location: "Location",
       locationValue: "Kokkola, Finland",
       email: "Email",
@@ -69,7 +70,7 @@ export const translations = {
       whatsappButton: "Message on WhatsApp",
     },
     footer: {
-      rights: "All rights reserved.",
+      rights: "Kokkola, Finland",
       builtWith: "Built with React, TypeScript & Tailwind CSS",
     },
   },
@@ -87,13 +88,14 @@ export const translations = {
     hero: {
       greeting: "Hei, olen",
       title: "IT-infrastruktuuriasiantuntija",
-      subtitle: "Yli 12 vuoden kokemus IT-infrastruktuurista, työpöytätuesta ja verkon turvallisuudesta",
+      subtitle: "Autan tiimejä rakentamaan turvallisia, luotettavia ja skaalautuvia IT-järjestelmiä vuodesta 2013 lähtien.",
       cta: "Ota yhteyttä",
       downloadCV: "Lataa CV",
+      finnishIntro: "Hei! Olen Joyanta Dey, IT-asiantuntija Kokkolasta. Minulla on yli 12 vuoden kokemus IT-infrastruktuurista, tietoturvasta ja teknisestä tuesta.",
     },
     about: {
       title: "Minusta",
-      description: "Kokenut IT-tukiasiantuntija, jolla on yli 12 vuoden kokemus IT-infrastruktuurista, työpöytätuesta ja verkon turvallisuudesta. Taitava monimutkaisten teknisten ongelmien ratkaisemisessa, tikettijärjestelmien hallinnassa sekä paikan päällä ja etätuen tarjoamisessa. Sitoutunut jatkuvaan oppimiseen, parannellaan parhaillaan suomen kielen taitoja paremman integroitumisen vuoksi paikallisiin työympäristöihin.",
+      description: "Olen kokenut IT-ammattilainen, jolla on vahva tausta verkko- ja järjestelmähallinnossa. Viimeisen vuosikymmenen aikana olen hallinnut yritysverkkoja, toteuttanut Active Directoryn, parantanut kyberturvallisuutta ja johtanut infrastruktuuriprojekteja lääke- ja infrastruktuurisektoreilla. Olen erikoistunut Windows- ja Linux-palvelinten hallintaan, pilvialustoihin (Azure & AWS) ja verkon tietoturvaratkaisuihin.",
       location: "Sijainti",
       locationValue: "Kokkola, Suomi",
       email: "Sähköposti",
@@ -143,7 +145,7 @@ export const translations = {
       whatsappButton: "Viesti WhatsAppissa",
     },
     footer: {
-      rights: "Kaikki oikeudet pidätetään.",
+      rights: "Kokkola, Suomi",
       builtWith: "Rakennettu Reactilla, TypeScriptillä ja Tailwind CSS:llä",
     },
   },
@@ -161,13 +163,14 @@ export const translations = {
     hero: {
       greeting: "হ্যালো, আমি",
       title: "আইটি অবকাঠামো বিশেষজ্ঞ",
-      subtitle: "আইটি অবকাঠামো, ডেস্কটপ সহায়তা এবং নেটওয়ার্ক নিরাপত্তায় ১২+ বছরের দক্ষতা",
+      subtitle: "২০১৩ সাল থেকে দল গুলিকে নিরাপদ, নির্ভরযোগ্য এবং স্কেলযোগ্য আইটি সিস্টেম তৈরি করতে সহায়তা করছি।",
       cta: "যোগাযোগ করুন",
       downloadCV: "সিভি ডাউনলোড",
+      finnishIntro: "হ্যালো! আমি কক্কোলা, ফিনল্যান্ডে অবস্থিত, আইটি অবকাঠামো, নেটওয়ার্ক নিরাপত্তা এবং প্রযুক্তিগত সহায়তায় ১২ বছরেরও বেশি অভিজ্ঞতা সহ।",
     },
     about: {
       title: "আমার সম্পর্কে",
-      description: "আইটি অবকাঠামো, ডেস্কটপ সাপোর্ট এবং নেটওয়ার্ক নিরাপত্তায় ১২ বছরেরও বেশি প্রমাণিত দক্ষতা সহ অভিজ্ঞ আইটি সাপোর্ট বিশেষজ্ঞ। জটিল প্রযুক্তিগত সমস্যা সমাধান, টিকিটিং সিস্টেম পরিচালনা এবং অন-সাইট এবং রিমোট সহায়তা প্রদানে দক্ষ। ক্রমাগত শেখার প্রতি প্রতিশ্রুতিবদ্ধ, বর্তমানে স্থানীয় কর্ম পরিবেশে আরও ভালভাবে একীভূত হওয়ার জন্য ফিনিশ ভাষা দক্ষতা উন্নত করছেন।",
+      description: "আমি নেটওয়ার্ক এবং সিস্টেম প্রশাসনে শক্তিশালী পটভূমি সহ একজন অভিজ্ঞ আইটি পেশাদার। গত এক দশকে, আমি এন্টারপ্রাইজ নেটওয়ার্ক পরিচালনা করেছি, অ্যাক্টিভ ডিরেক্টরি বাস্তবায়ন করেছি, সাইবার নিরাপত্তা উন্নত করেছি এবং ফার্মাসিউটিক্যাল এবং অবকাঠামো খাতে অবকাঠামো প্রকল্পের নেতৃত্ব দিয়েছি। আমি উইন্ডোজ এবং লিনাক্স সার্ভার প্রশাসন, ক্লাউড প্ল্যাটফর্ম (Azure & AWS), এবং নেটওয়ার্ক সিকিউরিটি সলিউশনে বিশেষজ্ঞ।",
       location: "অবস্থান",
       locationValue: "কক্কোলা, ফিনল্যান্ড",
       email: "ইমেইল",
@@ -217,7 +220,7 @@ export const translations = {
       whatsappButton: "হোয়াটসঅ্যাপে বার্তা",
     },
     footer: {
-      rights: "সর্বস্বত্ব সংরক্ষিত।",
+      rights: "কক্কোলা, ফিনল্যান্ড",
       builtWith: "React, TypeScript এবং Tailwind CSS দিয়ে নির্মিত",
     },
   },
