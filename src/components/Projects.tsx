@@ -79,6 +79,7 @@ export const Projects = () => {
         'QR code and barcode scanning integration',
         'Improved resource allocation and reduced asset loss',
       ],
+      link: 'https://itasset.generalpharma.com/',
     },
     {
       title: 'osTicket Support System',
