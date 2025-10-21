@@ -25,6 +25,14 @@ export const References = () => {
       phone: '+880 1844095200',
       linkedin: 'https://www.linkedin.com/in/ashik-hasan-79127b41/',
     },
+    {
+      name: 'Jenny Pulkkinen',
+      title: 'Finnish Teacher',
+      company: 'Kvarnen',
+      description: 'Dedicated language instructor supporting my integration into Finnish society. Provided essential language training and cultural guidance.',
+      email: 'jenny.pulkkinen@kvarnen.fi',
+      phone: '+358 406501029',
+    },
   ];
 
   return (
@@ -73,17 +81,19 @@ export const References = () => {
                   </a>
                 </div>
 
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full gap-2 border-primary/50 hover:bg-primary/10"
-                  asChild
-                >
-                  <a href={reference.linkedin} target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="h-4 w-4" />
-                    View LinkedIn Profile
-                  </a>
-                </Button>
+                {reference.linkedin && (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full gap-2 border-primary/50 hover:bg-primary/10"
+                    asChild
+                  >
+                    <a href={reference.linkedin} target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="h-4 w-4" />
+                      View LinkedIn Profile
+                    </a>
+                  </Button>
+                )}
               </Card>
             ))}
           </div>
