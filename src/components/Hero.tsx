@@ -14,10 +14,6 @@ export const Hero = () => {
     }
   };
 
-  const downloadPortfolioPDF = () => {
-    window.print();
-  };
-
   return (
     <section
       id="hero"
@@ -73,15 +69,6 @@ export const Hero = () => {
                 <Download className="h-5 w-5" />
                 {t.hero.downloadCV}
               </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="secondary"
-              className="gap-2 print-trigger hover:bg-secondary/90"
-              onClick={downloadPortfolioPDF}
-            >
-              <Download className="h-5 w-5" />
-              Download Portfolio PDF
             </Button>
           </div>
 
