@@ -22,7 +22,7 @@ export const translations = {
     about: {
       title: "About Me",
       description: "I'm an IT Infrastructure Specialist with over 12 years of experience in Windows, Linux, Microsoft 365, and network systems. I've led major infrastructure projects in Bangladesh's pharmaceutical and toll management sectors, including collaboration with G.E.A France on a national digital toll system. Now based in Finland, I'm looking for IT Support, Infrastructure, or Technical Specialist roles where I can contribute my skills in networking, security, and automation.",
-      finnishSubtitle: "Etsin IT-tuki- ja infrastruktuuritehtäviä Suomessa.",
+      finnishSubtitle: "Looking for IT support and infrastructure roles in Finland.",
       languageProgress: "Currently studying Finnish (A2 level, integration training in Kronoby)",
       location: "Location",
       locationValue: "Kokkola, Finland",
