@@ -8,6 +8,18 @@ export const Projects = () => {
 
   const projects = [
     {
+      title: 'Digital Toll Management System (with G.E.A France)',
+      period: 'September 2013 - April 2021',
+      description: 'Deployed Bangladesh\'s first IoT-based toll system integrating ETC, CCTV, and IP telephony in partnership with G.E.A France.',
+      technologies: ['ETC', 'IoT', 'CCTV', 'IP-PBX', 'Networking', 'Fiber Optics'],
+      achievements: [
+        'First digital toll collection system in Bangladesh',
+        'Integrated Electronic Toll Collection with surveillance',
+        'Implemented redundant network infrastructure',
+        'Managed 24/7 operations and maintenance',
+      ],
+    },
+    {
       title: 'Active Directory Infrastructure',
       period: 'December 2021 - April 2022',
       description: 'Led deployment of Microsoft Active Directory from scratch to establish centralized authentication and user management system.',

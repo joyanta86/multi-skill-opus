@@ -17,14 +17,17 @@ export const Certifications = () => {
     {
       name: 'AWS Solution Architect',
       issuer: 'AWS',
+      note: 'Completed course (non-certified practical knowledge)',
     },
     {
       name: 'Red Hat Certified System Administrator (RHCSA)',
       issuer: 'Red Hat',
+      note: 'Completed course (non-certified practical knowledge)',
     },
     {
       name: 'Red Hat Certified Engineer (RHCE - Ansible)',
       issuer: 'Red Hat',
+      note: 'Completed course (non-certified practical knowledge)',
     },
     {
       name: 'Hygiene Passport Card',
@@ -64,6 +67,9 @@ export const Certifications = () => {
                       {cert.name}
                     </h3>
                     <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+                    {cert.note && (
+                      <p className="text-xs text-muted-foreground/70 italic mt-1">{cert.note}</p>
+                    )}
                   </div>
                 </div>
               </Card>

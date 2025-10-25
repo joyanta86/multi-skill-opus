@@ -45,6 +45,9 @@ export const Hero = () => {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               {t.hero.subtitle}
             </p>
+            <p className="text-base text-muted-foreground/90 max-w-2xl mx-auto">
+              {t.hero.locationStatus}
+            </p>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

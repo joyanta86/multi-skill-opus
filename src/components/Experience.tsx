@@ -11,6 +11,7 @@ export const Experience = () => {
       company: 'General Pharmaceuticals Ltd.',
       location: 'Dhaka, Bangladesh',
       period: 'April 2021 - September 2024',
+      headline: 'Led enterprise infrastructure modernization and digital toll system deployment.',
       responsibilities: [
         'Led IT Infrastructure Team deploying Active Directory, Windows Server, and Linux-based services',
         'Designed and implemented high-availability IP telephony systems (99.9% uptime)',
@@ -25,6 +26,7 @@ export const Experience = () => {
       company: 'Orion Infrastructure Ltd.',
       location: 'Dhaka, Bangladesh',
       period: 'September 2013 - April 2021',
+      headline: 'Worked with G.E.A France to deploy Bangladesh\'s first digital toll collection system integrating ETC, CCTV, IP-PBX, and IoT devices.',
       responsibilities: [
         'Led IT infrastructure for Bangladesh\'s first digital toll management system',
         'Deployed Electronic Toll Collection (ETC) system in partnership with G.E.A. France',
@@ -61,11 +63,14 @@ export const Experience = () => {
 
                   <div className="space-y-4">
                     <div>
-                      <h3 className="text-xl font-semibold text-foreground mb-2">{exp.title}</h3>
+                      {exp.headline && (
+                        <p className="text-sm text-primary/90 font-medium mb-3 italic">{exp.headline}</p>
+                      )}
+                      <h3 className="text-xl font-bold text-foreground mb-2">{exp.title}</h3>
                       <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                         <div className="flex items-center gap-2">
                           <Briefcase className="h-4 w-4 text-primary" />
-                          <span>{exp.company}</span>
+                          <span className="font-semibold">{exp.company}</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <MapPin className="h-4 w-4 text-primary" />
