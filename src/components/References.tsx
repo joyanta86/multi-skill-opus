@@ -31,7 +31,7 @@ export const References = () => {
       company: 'Kvarnen',
       description: 'Dedicated language instructor supporting my integration into Finnish society. Provided essential language training and cultural guidance.',
       email: 'jenny.pulkkinen@kvarnen.fi',
-      phone: '+358 406501029',
+      phone: '+358 50 5465294',
     },
   ];
 
