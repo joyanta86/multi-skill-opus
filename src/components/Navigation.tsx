@@ -44,6 +44,7 @@ export const Navigation = () => {
   const languages = [
     { code: 'en', label: 'English', flag: '🇬🇧' },
     { code: 'fi', label: 'Suomi', flag: '🇫🇮' },
+    { code: 'sv', label: 'Svenska', flag: '🇸🇪' },
     { code: 'no', label: 'Norsk', flag: '🇳🇴' },
     { code: 'bn', label: 'বাংলা', flag: '🇧🇩' },
   ];
@@ -94,7 +95,7 @@ export const Navigation = () => {
                 {languages.map((lang) => (
                   <DropdownMenuItem
                     key={lang.code}
-                    onClick={() => setLanguage(lang.code as 'en' | 'fi' | 'bn' | 'no')}
+                    onClick={() => setLanguage(lang.code as 'en' | 'fi' | 'bn' | 'no' | 'sv')}
                     className={language === lang.code ? 'bg-muted' : ''}
                   >
                     <span className="mr-2">{lang.flag}</span>
