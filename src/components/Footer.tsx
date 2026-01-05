@@ -12,7 +12,7 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-muted-foreground text-sm">
-                © {currentYear} Joyanta Dey. {t.footer.rights}
+                © {currentYear} Joyanta Dey | {t.footer.rights}
               </p>
               <p className="text-muted-foreground text-xs mt-1 italic">{t.footer.builtWith}</p>
             </div>
