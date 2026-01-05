@@ -39,14 +39,11 @@ export const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Joyanta Dey
             </h1>
-            <h2 className="text-2xl md:text-4xl font-semibold text-foreground">
+            <h2 className="text-xl md:text-2xl font-semibold text-foreground max-w-3xl mx-auto">
               {t.hero.title}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               {t.hero.subtitle}
-            </p>
-            <p className="text-base text-muted-foreground/90 max-w-2xl mx-auto">
-              {t.hero.locationStatus}
             </p>
           </div>
 
@@ -72,12 +69,6 @@ export const Hero = () => {
             </Button>
           </div>
 
-          {/* Finnish intro for local visitors */}
-          <div className="pt-8 max-w-2xl mx-auto">
-            <p className="text-sm text-muted-foreground/80 italic">
-              {t.hero.finnishIntro}
-            </p>
-          </div>
 
           <div className="pt-12 animate-bounce">
             <ArrowDown className="h-6 w-6 mx-auto text-primary" />

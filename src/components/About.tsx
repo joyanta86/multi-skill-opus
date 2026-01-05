@@ -28,19 +28,21 @@ export const About = () => {
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <img 
                     src={profilePhoto} 
-                    alt="Joyanta Dey - IT Infrastructure Specialist with 12+ years of experience in Linux, Windows, Microsoft 365, and network systems" 
+                    alt="Joyanta Dey - IT Infrastructure & Service Management Professional" 
                     className="w-32 h-32 rounded-lg object-cover border-2 border-primary/30 shadow-lg flex-shrink-0"
                   />
-                  <div className="flex-1 space-y-3">
-                    <p className="text-muted-foreground leading-relaxed text-lg">
-                      {t.about.description}
+                  <div className="flex-1 space-y-4">
+                    <p className="text-muted-foreground leading-relaxed">
+                      {t.about.description1}
                     </p>
-                    <p className="text-sm text-muted-foreground/80 italic">
-                      {t.about.finnishSubtitle}
+                    <p className="text-muted-foreground leading-relaxed">
+                      {t.about.description2}
                     </p>
-                    <p className="text-sm text-muted-foreground/70 flex items-center gap-2">
-                      <span className="inline-block w-2 h-2 bg-primary rounded-full"></span>
-                      {t.about.languageProgress}
+                    <p className="text-muted-foreground leading-relaxed">
+                      {t.about.description3}
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {t.about.description4}
                     </p>
                   </div>
                 </div>

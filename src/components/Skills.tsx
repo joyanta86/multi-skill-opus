@@ -1,4 +1,4 @@
-import { Server, Cloud, Shield, Code, Activity } from 'lucide-react';
+import { Wrench, Cpu, Globe } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -7,59 +7,19 @@ export const Skills = () => {
 
   const skillCategories = [
     {
-      icon: Server,
-      title: t.skills.categories.server,
-      skills: [
-        'Windows Server (ADDS, DHCP, DNS, GPO, WSUS)',
-        'Active Directory',
-        'Linux (Red Hat, CentOS, Ubuntu, Debian)',
-        'Microsoft 365 & Exchange',
-        'File Server Management',
-      ],
+      icon: Cpu,
+      title: t.skills.categories.coreSkills,
+      skills: t.skills.coreSkillsList,
     },
     {
-      icon: Cloud,
-      title: t.skills.categories.cloud,
-      skills: [
-        'AWS Cloud Platform',
-        'Azure Cloud Services',
-        'VMware vSphere & ESXi',
-        'Virtualization Technologies',
-        'Cloud Administration',
-      ],
+      icon: Wrench,
+      title: t.skills.categories.toolsPlatforms,
+      skills: t.skills.toolsPlatformsList,
     },
     {
-      icon: Shield,
-      title: t.skills.categories.network,
-      skills: [
-        'Fortinet, Checkpoint, Sophos Firewalls',
-        'CrowdStrike Falcon EDR',
-        'Cisco Routing & Switching',
-        'VPN Management',
-        'Network Security Implementation',
-      ],
-    },
-    {
-      icon: Code,
-      title: t.skills.categories.automation,
-      skills: [
-        'PowerShell Scripting',
-        'Bash/Shell Scripting',
-        'Ansible Configuration',
-        'Python Automation',
-        'Git Version Control',
-      ],
-    },
-    {
-      icon: Activity,
-      title: t.skills.categories.monitoring,
-      skills: [
-        'Zabbix Monitoring',
-        'osTicket Support System',
-        'Snipe-IT Asset Management',
-        'Remote Support (SSH, RDP, AnyDesk)',
-        'System Performance Monitoring',
-      ],
+      icon: Globe,
+      title: t.skills.categories.languages,
+      skills: t.skills.languagesList,
     },
   ];
 
@@ -71,7 +31,7 @@ export const Skills = () => {
             {t.skills.title}
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {skillCategories.map((category, index) => {
               const Icon = category.icon;
               return (
