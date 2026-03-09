@@ -12,7 +12,7 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT Infrastructure & Service Management Professional",
+      title: "IT Infrastructure & Support Specialist",
       subtitle: "Based in Finland | Open to Permanent, Contract, and Seasonal IT Opportunities",
       locationStatus: "",
       cta: "Contact Me",
@@ -125,7 +125,7 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT-infrastruktuuri- ja palvelunhallinnan ammattilainen",
+      title: "IT-infrastruktuuri- ja tukiasiantuntija",
       subtitle: "Asun Suomessa | Avoin vakituisiin, määräaikaisiin ja kausiluonteisiin IT-tehtäviin",
       locationStatus: "",
       cta: "Ota yhteyttä",
@@ -238,7 +238,7 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "আইটি অবকাঠামো ও সার্ভিস ম্যানেজমেন্ট পেশাদার",
+      title: "আইটি অবকাঠামো ও সাপোর্ট বিশেষজ্ঞ",
       subtitle: "ফিনল্যান্ডে অবস্থিত | স্থায়ী, চুক্তিভিত্তিক এবং মৌসুমী আইটি সুযোগের জন্য উন্মুক্ত",
       locationStatus: "",
       cta: "যোগাযোগ করুন",
@@ -351,7 +351,7 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT-infrastruktur og tjenesteforvaltning profesjonell",
+      title: "IT-infrastruktur og supportspesialist",
       subtitle: "Basert i Finland | Åpen for faste, kontrakts- og sesongbaserte IT-muligheter",
       locationStatus: "",
       cta: "Kontakt meg",
@@ -464,7 +464,7 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT-infrastruktur och tjänstehantering proffs",
+      title: "IT-infrastruktur och supportspecialist",
       subtitle: "Baserad i Finland | Öppen för fasta, kontrakts- och säsongsbaserade IT-möjligheter",
       locationStatus: "",
       cta: "Kontakta mig",
