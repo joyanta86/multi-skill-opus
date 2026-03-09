@@ -10,6 +10,7 @@ import { References } from '@/components/References';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { CookieConsent } from '@/components/CookieConsent';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ const Index = () => {
       </main>
       <Footer />
       <CookieConsent />
+      <ScrollToTop />
     </div>
   );
 };
