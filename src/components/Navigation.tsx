@@ -133,24 +133,37 @@ export const Navigation = () => {
                 )}
               </button>
             ))}
-            <button
-              onClick={() => { navigate('/apply'); setIsOpen(false); }}
-              className={`relative px-3 py-2 text-sm transition-colors rounded-md flex items-center gap-1.5 ${
-                location.pathname === '/apply'
-                  ? 'text-foreground'
-                  : 'text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              <Wrench className="w-3.5 h-3.5" />
-              Tools
-              {location.pathname === '/apply' && (
-                <motion.div
-                  layoutId="activeNav"
-                  className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-primary rounded-full"
-                  transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                />
-              )}
-            </button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  className={`relative px-3 py-2 text-sm transition-colors rounded-md flex items-center gap-1.5 ${
+                    ['/apply', '/resume'].includes(location.pathname)
+                      ? 'text-foreground'
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  <Wrench className="w-3.5 h-3.5" />
+                  Tools
+                  {['/apply', '/resume'].includes(location.pathname) && (
+                    <motion.div
+                      layoutId="activeNav"
+                      className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-primary rounded-full"
+                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48">
+                <DropdownMenuItem onClick={() => navigate('/apply')} className={location.pathname === '/apply' ? 'bg-muted' : ''}>
+                  <FileText className="w-4 h-4 mr-2" />
+                  Cover Letter Generator
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => navigate('/resume')} className={location.pathname === '/resume' ? 'bg-muted' : ''}>
+                  <FileUser className="w-4 h-4 mr-2" />
+                  Smart Resume
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
 
           {/* Language Switcher */}
