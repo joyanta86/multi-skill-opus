@@ -1,4 +1,5 @@
 import { ArrowDown, Download, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -70,10 +71,10 @@ export const Hero = () => {
               className="gap-2.5 bg-primary hover:bg-primary/90 text-primary-foreground shadow-[var(--glow-primary)] hover:shadow-[0_0_40px_hsl(200_100%_50%/0.4)] transition-all duration-300 font-medium px-8"
               asChild
             >
-              <a href="/cv.pdf" download>
+              <Link to="/resume">
                 <Download className="h-5 w-5" />
                 {t.hero.downloadCV}
-              </a>
+              </Link>
             </Button>
             <Button
               size="lg"
