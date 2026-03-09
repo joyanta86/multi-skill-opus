@@ -1,8 +1,9 @@
-import { Users, Mail, Phone, Linkedin } from 'lucide-react';
+import { Users, Mail, Phone, Linkedin, ExternalLink } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/motion/AnimatedSection';
+import jennyPhoto from '@/assets/jenny-pulkkinen.jpg';
 
 export const References = () => {
   const { t } = useLanguage();
