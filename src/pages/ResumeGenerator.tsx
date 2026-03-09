@@ -269,12 +269,12 @@ const ResumeGenerator = () => {
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
                       <div>
                         <span style={{ fontWeight: 700, fontSize: '10pt' }}>
-                          Project Lead — Digital Toll Management System
+                        Network Administrator &amp; Project Lead
                         </span>
                         <span style={{ color: '#555' }}> — Orion Infrastructure Ltd. (G.E.A France Partnership)</span>
                       </div>
                       <div style={{ fontSize: '8.5pt', color: '#666', whiteSpace: 'nowrap' }}>
-                        2014 – 2016
+                        2010 – 2018
                       </div>
                     </div>
                     <ul style={{ paddingLeft: '16px', marginTop: '4px', marginBottom: 0 }}>
