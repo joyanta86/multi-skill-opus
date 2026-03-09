@@ -1,4 +1,4 @@
-import { Wrench, Cpu, Globe } from 'lucide-react';
+import { Server, Wrench, Globe } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/motion/AnimatedSection';
@@ -7,8 +7,8 @@ export const Skills = () => {
   const { t } = useLanguage();
 
   const skillCategories = [
-    { icon: Cpu, title: t.skills.categories.coreSkills, skills: t.skills.coreSkillsList },
-    { icon: Wrench, title: t.skills.categories.toolsPlatforms, skills: t.skills.toolsPlatformsList },
+    { icon: Server, title: t.skills.categories.infrastructure, skills: t.skills.infrastructureList },
+    { icon: Wrench, title: t.skills.categories.support, skills: t.skills.supportList },
     { icon: Globe, title: t.skills.categories.languages, skills: t.skills.languagesList },
   ];
 
