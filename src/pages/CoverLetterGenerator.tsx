@@ -178,7 +178,7 @@ joyanta.fi`;
                     />
                   </div>
 
-                  <div className="flex gap-3 pt-2">
+                  <div className="flex flex-col sm:flex-row gap-3 pt-2">
                     <Button onClick={handleDownloadPDF} className="flex-1 gap-2">
                       <FileDown className="w-4 h-4" />
                       Download PDF
