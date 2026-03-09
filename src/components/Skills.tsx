@@ -13,32 +13,32 @@ export const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-muted/30">
+    <section id="skills" className="py-24 bg-muted/20">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-primary bg-clip-text text-transparent tracking-tight">
               {t.skills.title}
             </h2>
           </AnimatedSection>
 
-          <StaggerContainer className="grid md:grid-cols-3 gap-6">
+          <StaggerContainer className="grid md:grid-cols-3 gap-8">
             {skillCategories.map((category, index) => {
               const Icon = category.icon;
               return (
                 <StaggerItem key={index}>
-                  <Card className="p-6 bg-card border-border hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,188,255,0.15)] group h-full">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                        <Icon className="h-6 w-6 text-primary" />
+                  <Card className="p-8 bg-card border-border hover:border-primary/40 transition-all duration-300 group h-full">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="p-2.5 rounded-lg bg-primary/10 group-hover:bg-primary/15 transition-colors">
+                        <Icon className="h-5 w-5 text-primary" />
                       </div>
-                      <h3 className="text-lg font-semibold text-foreground">{category.title}</h3>
+                      <h3 className="text-base font-semibold text-foreground tracking-tight">{category.title}</h3>
                     </div>
-                    <ul className="space-y-2">
+                    <ul className="space-y-3">
                       {category.skills.map((skill, skillIndex) => (
                         <li key={skillIndex} className="text-muted-foreground flex items-start">
-                          <span className="text-primary mr-2">›</span>
-                          <span className="text-sm">{skill}</span>
+                          <span className="text-primary/60 mr-2.5 mt-0.5 text-xs">▸</span>
+                          <span className="font-mono text-sm tracking-tight">{skill}</span>
                         </li>
                       ))}
                     </ul>

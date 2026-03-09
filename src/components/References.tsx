@@ -37,11 +37,11 @@ export const References = () => {
   ];
 
   return (
-    <section id="references" className="py-20 bg-background">
+    <section id="references" className="py-24 bg-background">
       <div className="container px-4">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-primary bg-clip-text text-transparent tracking-tight">
               {t.references.title}
             </h2>
           </AnimatedSection>
@@ -49,37 +49,37 @@ export const References = () => {
           <StaggerContainer className="grid md:grid-cols-2 gap-6">
             {references.map((reference, index) => (
               <StaggerItem key={index}>
-                <Card className="p-6 bg-card border-border hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,188,255,0.15)] group h-full">
+                <Card className="p-7 bg-card border-border hover:border-primary/30 transition-all duration-300 group h-full">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="flex-shrink-0 p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                      <Users className="h-6 w-6 text-primary" />
+                    <div className="flex-shrink-0 p-2.5 rounded-lg bg-primary/10 group-hover:bg-primary/15 transition-colors">
+                      <Users className="h-5 w-5 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-foreground mb-1">{reference.name}</h3>
-                      <p className="text-sm text-primary font-medium">{reference.title}</p>
-                      <p className="text-sm text-muted-foreground">{reference.company}</p>
+                      <h3 className="text-lg font-semibold text-foreground mb-0.5 tracking-tight">{reference.name}</h3>
+                      <p className="text-sm text-primary/80 font-medium">{reference.title}</p>
+                      <p className="text-xs text-muted-foreground font-mono">{reference.company}</p>
                     </div>
                   </div>
 
-                  <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{reference.description}</p>
+                  <p className="text-muted-foreground mb-5 text-sm leading-relaxed">{reference.description}</p>
 
-                  <div className="space-y-2 mb-4">
+                  <div className="space-y-2 mb-5">
                     <a href={`mailto:${reference.email}`}
-                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
-                      <Mail className="h-4 w-4" />
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors font-mono">
+                      <Mail className="h-3.5 w-3.5" />
                       {reference.email}
                     </a>
                     <a href={`tel:${reference.phone.replace(/\s/g, '')}`}
-                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
-                      <Phone className="h-4 w-4" />
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors font-mono">
+                      <Phone className="h-3.5 w-3.5" />
                       {reference.phone}
                     </a>
                   </div>
 
                   {reference.linkedin && (
-                    <Button variant="outline" size="sm" className="w-full gap-2 border-primary/50 hover:bg-primary/10" asChild>
+                    <Button variant="outline" size="sm" className="w-full gap-2 border-border hover:border-primary/40 hover:bg-primary/5 transition-all duration-300" asChild>
                       <a href={reference.linkedin} target="_blank" rel="noopener noreferrer">
-                        <Linkedin className="h-4 w-4" />
+                        <Linkedin className="h-3.5 w-3.5" />
                         View LinkedIn Profile
                       </a>
                     </Button>
