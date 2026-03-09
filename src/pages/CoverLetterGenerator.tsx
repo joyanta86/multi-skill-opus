@@ -50,7 +50,7 @@ Subject: Application for ${jobTitle} – Joyanta Dey
 
 I am writing to express my strong interest in the ${jobTitle} position at ${company}. Having recently relocated to Finland, I am eager to apply my 10+ years of experience in IT infrastructure and service management to your team.
 
-My background is a blend of high-level infrastructure leadership and hands-on technical problem-solving. At General Pharmaceuticals Ltd., I managed complex environments involving Azure, Cloudflare, and ${skills}. I also led the deployment of Bangladesh's first digital toll system in partnership with G.E.A France, maintaining 99.5% uptime.
+My background is a blend of high-level infrastructure leadership and hands-on technical problem-solving. At General Pharmaceuticals Ltd., I managed complex environments involving Cloudflare, SSL/TLS management, and my core competencies in ${skills}. I also led the deployment of Bangladesh's first digital toll system in partnership with G.E.A France, maintaining 99.5% uptime.
 
 Why I am a strong fit:
 
@@ -284,7 +284,8 @@ joyanta.fi`;
                   <div style={{ marginBottom: '16px' }}>
                     My background is a blend of high-level infrastructure leadership and hands-on
                     technical problem-solving. At General Pharmaceuticals Ltd., I managed complex
-                    environments involving Azure, Cloudflare, and {skills}. I also led the
+                    environments involving Cloudflare, SSL/TLS management, and my core competencies
+                    in <strong>{skills}</strong>. I also led the
                     deployment of Bangladesh's first digital toll system in partnership with G.E.A
                     France, maintaining 99.5% uptime.
                   </div>
