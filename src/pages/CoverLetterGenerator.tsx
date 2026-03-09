@@ -229,23 +229,31 @@ joyanta.fi`;
               </div>
               <div
                 ref={containerRef}
-                className="bg-muted/30 rounded-lg p-2 sm:p-4 flex-1 flex items-start justify-center overflow-hidden max-h-[80vh]"
+                className="bg-muted/30 rounded-lg p-2 sm:p-4 flex-1 overflow-auto max-h-[80vh]"
               >
                 {/* A4 Paper */}
                 <div
-                  ref={letterRef}
-                  className="bg-white text-black shadow-2xl origin-top"
                   style={{
-                    width: '210mm',
-                    minHeight: '297mm',
-                    padding: '25mm 25mm 20mm 25mm',
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '11pt',
-                    lineHeight: '1.6',
-                    transform: `scale(${paperScale})`,
-                    transformOrigin: 'top center',
+                    width: `${210 * 3.7795 * paperScale}px`,
+                    height: `${297 * 3.7795 * paperScale}px`,
+                    margin: '0 auto',
+                    overflow: 'hidden',
                   }}
                 >
+                  <div
+                    ref={letterRef}
+                    className="bg-white text-black shadow-2xl"
+                    style={{
+                      width: '210mm',
+                      minHeight: '297mm',
+                      padding: '25mm 25mm 20mm 25mm',
+                      fontFamily: "'Inter', sans-serif",
+                      fontSize: '11pt',
+                      lineHeight: '1.6',
+                      transform: `scale(${paperScale})`,
+                      transformOrigin: 'top left',
+                    }}
+                  >
                   {/* Header */}
                   <div
                     style={{
