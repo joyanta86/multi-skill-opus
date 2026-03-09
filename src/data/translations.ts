@@ -436,6 +436,20 @@ export const translations = {
       rights: "Basert i Finland | Gyldig arbeidstillatelse | Åpen for passende IT-muligheter",
       builtWith: "Bygget med React, TypeScript og Tailwind CSS",
     },
+    cookies: {
+      title: "Informasjonskapsler",
+      description: "Dette nettstedet bruker informasjonskapsler for å tilpasse annonser og analysere trafikk. Les vår",
+      privacyPolicy: "Personvernerklæring",
+      and: "og",
+      termsOfService: "Tjenestevilkår",
+      decline: "Avslå",
+      acceptAll: "Godta alle",
+      essentialCookies: "Nødvendige informasjonskapsler",
+      alwaysOn: "Alltid på",
+      adStorage: "Annonselagring og personalisering",
+      analyticsStorage: "Analyselagring",
+      requiresConsent: "Krever samtykke",
+    },
   },
   sv: {
     nav: {
