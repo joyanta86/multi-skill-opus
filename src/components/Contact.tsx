@@ -8,7 +8,7 @@ export const Contact = () => {
   const { t } = useLanguage();
 
   const contactMethods = [
-    { icon: Mail, title: t.about.email, value: 'likejoy@gmail.com', href: 'mailto:likejoy@gmail.com' },
+    { icon: Mail, title: t.about.email, value: 'joyanta.it@gmail.com', href: 'mailto:joyanta.it@gmail.com' },
     { icon: Phone, title: t.about.phone, value: '+358 449874028', href: 'tel:+358449874028' },
     { icon: MessageCircle, title: t.about.whatsapp, value: '+358 449874028', href: 'https://wa.me/358449874028' },
     { icon: MapPin, title: t.about.location, value: 'Kokkola, Finland' },
