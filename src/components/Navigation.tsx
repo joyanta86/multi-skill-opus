@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Menu, X, Globe, Wrench } from 'lucide-react';
+import { Menu, X, Globe, Wrench, FileText, FileUser } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ThemeToggle } from '@/components/ThemeToggle';
@@ -133,24 +133,37 @@ export const Navigation = () => {
                 )}
               </button>
             ))}
-            <button
-              onClick={() => { navigate('/apply'); setIsOpen(false); }}
-              className={`relative px-3 py-2 text-sm transition-colors rounded-md flex items-center gap-1.5 ${
-                location.pathname === '/apply'
-                  ? 'text-foreground'
-                  : 'text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              <Wrench className="w-3.5 h-3.5" />
-              Tools
-              {location.pathname === '/apply' && (
-                <motion.div
-                  layoutId="activeNav"
-                  className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-primary rounded-full"
-                  transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                />
-              )}
-            </button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  className={`relative px-3 py-2 text-sm transition-colors rounded-md flex items-center gap-1.5 ${
+                    ['/apply', '/resume'].includes(location.pathname)
+                      ? 'text-foreground'
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  <Wrench className="w-3.5 h-3.5" />
+                  Tools
+                  {['/apply', '/resume'].includes(location.pathname) && (
+                    <motion.div
+                      layoutId="activeNav"
+                      className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-primary rounded-full"
+                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48">
+                <DropdownMenuItem onClick={() => navigate('/apply')} className={location.pathname === '/apply' ? 'bg-muted' : ''}>
+                  <FileText className="w-4 h-4 mr-2" />
+                  Cover Letter Generator
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => navigate('/resume')} className={location.pathname === '/resume' ? 'bg-muted' : ''}>
+                  <FileUser className="w-4 h-4 mr-2" />
+                  Smart Resume
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
 
           {/* Language Switcher */}
@@ -205,16 +218,28 @@ export const Navigation = () => {
                   {item.label}
                 </button>
               ))}
+              <div className="px-4 py-1.5 text-xs font-mono text-muted-foreground/60 uppercase tracking-wider">Tools</div>
               <button
                 onClick={() => { navigate('/apply'); setIsOpen(false); }}
-                className={`px-4 py-2.5 text-sm transition-colors rounded-md text-left flex items-center gap-2 ${
+                className={`px-4 py-2.5 text-sm transition-colors rounded-md text-left flex items-center gap-2 w-full ${
                   location.pathname === '/apply'
                     ? 'text-foreground bg-primary/10 border-l-2 border-primary'
                     : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
                 }`}
               >
-                <Wrench className="w-3.5 h-3.5" />
-                Tools
+                <FileText className="w-3.5 h-3.5" />
+                Cover Letter
+              </button>
+              <button
+                onClick={() => { navigate('/resume'); setIsOpen(false); }}
+                className={`px-4 py-2.5 text-sm transition-colors rounded-md text-left flex items-center gap-2 w-full ${
+                  location.pathname === '/resume'
+                    ? 'text-foreground bg-primary/10 border-l-2 border-primary'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                }`}
+              >
+                <FileUser className="w-3.5 h-3.5" />
+                Smart Resume
               </button>
             </div>
           </div>
