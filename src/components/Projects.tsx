@@ -79,7 +79,7 @@ export const Projects = () => {
           </AnimatedSection>
 
           {/* Current Projects */}
-          <AnimatedSection delay={0.1}>
+          <AnimatedSection delay={0.1} direction="right">
             <div className="mb-12">
               <h3 className="text-lg font-semibold text-foreground mb-6 flex items-center gap-2 tracking-tight">
                 <Rocket className="h-5 w-5 text-primary" />
