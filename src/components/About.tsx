@@ -41,6 +41,13 @@ export const About = () => {
                     <p className="text-muted-foreground leading-relaxed text-[15px]">{t.about.description4}</p>
                   </div>
                 </div>
+
+                {/* Creative media & Finnish tech interest */}
+                <div className="mt-6 pt-6 border-t border-border">
+                  <p className="text-muted-foreground leading-relaxed text-sm italic">
+                    Beyond infrastructure, I bring a background in creative media and digital content — giving me a unique perspective on user-facing technology. I'm deeply interested in the Finnish tech landscape and excited to contribute to innovative teams building the future of Nordic IT.
+                  </p>
+                </div>
               </Card>
             </AnimatedSection>
 

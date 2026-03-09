@@ -121,7 +121,7 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 animate-fade-in">
+          <div className="md:hidden pb-4 animate-fade-in bg-card/95 backdrop-blur-xl border-b border-border -mx-4 px-4">
             <div className="flex flex-col space-y-1">
               {navItems.map((item) => (
                 <button
