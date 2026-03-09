@@ -218,16 +218,28 @@ export const Navigation = () => {
                   {item.label}
                 </button>
               ))}
+              <div className="px-4 py-1.5 text-xs font-mono text-muted-foreground/60 uppercase tracking-wider">Tools</div>
               <button
                 onClick={() => { navigate('/apply'); setIsOpen(false); }}
-                className={`px-4 py-2.5 text-sm transition-colors rounded-md text-left flex items-center gap-2 ${
+                className={`px-4 py-2.5 text-sm transition-colors rounded-md text-left flex items-center gap-2 w-full ${
                   location.pathname === '/apply'
                     ? 'text-foreground bg-primary/10 border-l-2 border-primary'
                     : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
                 }`}
               >
-                <Wrench className="w-3.5 h-3.5" />
-                Tools
+                <FileText className="w-3.5 h-3.5" />
+                Cover Letter
+              </button>
+              <button
+                onClick={() => { navigate('/resume'); setIsOpen(false); }}
+                className={`px-4 py-2.5 text-sm transition-colors rounded-md text-left flex items-center gap-2 w-full ${
+                  location.pathname === '/resume'
+                    ? 'text-foreground bg-primary/10 border-l-2 border-primary'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                }`}
+              >
+                <FileUser className="w-3.5 h-3.5" />
+                Smart Resume
               </button>
             </div>
           </div>
