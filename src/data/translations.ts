@@ -351,7 +351,7 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT-infrastruktur og tjenesteforvaltning profesjonell",
+      title: "IT-infrastruktur og supportspesialist",
       subtitle: "Basert i Finland | Åpen for faste, kontrakts- og sesongbaserte IT-muligheter",
       locationStatus: "",
       cta: "Kontakt meg",
