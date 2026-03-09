@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Linkedin, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export const Footer = () => {
@@ -14,7 +15,13 @@ export const Footer = () => {
               <p className="text-muted-foreground text-sm">
                 © {currentYear} Joyanta Dey | {t.footer.rights}
               </p>
-              <p className="text-muted-foreground text-xs mt-1 italic">{t.footer.builtWith}</p>
+              <div className="flex items-center gap-3 mt-1">
+                <p className="text-muted-foreground text-xs italic">{t.footer.builtWith}</p>
+                <span className="text-muted-foreground/40 text-xs">·</span>
+                <Link to="/privacy-policy" className="text-muted-foreground text-xs hover:text-primary transition-colors">
+                  Privacy Policy
+                </Link>
+              </div>
             </div>
 
             <div className="flex items-center gap-4">
