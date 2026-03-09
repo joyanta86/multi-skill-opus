@@ -205,6 +205,17 @@ export const Navigation = () => {
                   {item.label}
                 </button>
               ))}
+              <button
+                onClick={() => { navigate('/apply'); setIsOpen(false); }}
+                className={`px-4 py-2.5 text-sm transition-colors rounded-md text-left flex items-center gap-2 ${
+                  location.pathname === '/apply'
+                    ? 'text-foreground bg-primary/10 border-l-2 border-primary'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                }`}
+              >
+                <Wrench className="w-3.5 h-3.5" />
+                Tools
+              </button>
             </div>
           </div>
         )}
