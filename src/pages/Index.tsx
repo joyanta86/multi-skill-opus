@@ -27,6 +27,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 };
