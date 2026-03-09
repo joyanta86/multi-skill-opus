@@ -9,6 +9,7 @@ import { Projects } from '@/components/Projects';
 import { References } from '@/components/References';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
+import { CookieConsent } from '@/components/CookieConsent';
 
 const Index = () => {
   return (
