@@ -323,6 +323,20 @@ export const translations = {
       rights: "ফিনল্যান্ডে অবস্থিত | বৈধ ওয়ার্ক পারমিট | উপযুক্ত আইটি সুযোগের জন্য উন্মুক্ত",
       builtWith: "React, TypeScript এবং Tailwind CSS দিয়ে নির্মিত",
     },
+    cookies: {
+      title: "কুকি সম্মতি",
+      description: "এই সাইটটি বিজ্ঞাপন ব্যক্তিগতকরণ এবং ট্রাফিক বিশ্লেষণের জন্য কুকি ব্যবহার করে। পড়ুন আমাদের",
+      privacyPolicy: "গোপনীয়তা নীতি",
+      and: "এবং",
+      termsOfService: "পরিষেবার শর্তাবলী",
+      decline: "প্রত্যাখ্যান",
+      acceptAll: "সব গ্রহণ করুন",
+      essentialCookies: "অপরিহার্য কুকি",
+      alwaysOn: "সর্বদা চালু",
+      adStorage: "বিজ্ঞাপন সঞ্চয় ও ব্যক্তিগতকরণ",
+      analyticsStorage: "বিশ্লেষণ সঞ্চয়",
+      requiresConsent: "সম্মতি প্রয়োজন",
+    },
   },
   no: {
     nav: {
