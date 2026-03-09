@@ -71,7 +71,11 @@ export const CookieConsent = () => {
             </div>
 
             <p className="text-muted-foreground text-xs leading-relaxed mb-3">
-              This site uses cookies to personalize ads and analyze traffic. You can choose to accept or decline.
+              This site uses cookies to personalize ads and analyze traffic. Read our{' '}
+              <Link to="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>{' '}
+              and{' '}
+              <Link to="/terms-of-service" className="text-primary hover:underline">Terms of Service</Link>.
+            </p>
             </p>
 
             <AnimatePresence>
