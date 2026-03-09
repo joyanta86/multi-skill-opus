@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { Input } from '@/components/ui/input';
@@ -21,7 +21,24 @@ const formatDate = () => {
 const CoverLetterGenerator = () => {
   const { toast } = useToast();
   const letterRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const [copied, setCopied] = useState(false);
+  const [paperScale, setPaperScale] = useState(0.55);
+
+  const updateScale = useCallback(() => {
+    if (containerRef.current) {
+      const containerWidth = containerRef.current.clientWidth - 16; // padding
+      const paperWidthPx = 210 * 3.7795; // 210mm in px
+      const scale = Math.min(containerWidth / paperWidthPx, 0.55);
+      setPaperScale(scale);
+    }
+  }, []);
+
+  useEffect(() => {
+    updateScale();
+    window.addEventListener('resize', updateScale);
+    return () => window.removeEventListener('resize', updateScale);
+  }, [updateScale]);
 
   const [form, setForm] = useState({
     recipient: '',
@@ -178,7 +195,7 @@ joyanta.fi`;
                     />
                   </div>
 
-                  <div className="flex gap-3 pt-2">
+                  <div className="flex flex-col sm:flex-row gap-3 pt-2">
                     <Button onClick={handleDownloadPDF} className="flex-1 gap-2">
                       <FileDown className="w-4 h-4" />
                       Download PDF
@@ -210,23 +227,33 @@ joyanta.fi`;
               <div className="text-sm text-muted-foreground mb-3 font-mono">
                 Live Preview
               </div>
-              <div className="bg-muted/30 rounded-lg p-4 flex-1 flex items-start justify-center overflow-auto max-h-[80vh]">
+              <div
+                ref={containerRef}
+                className="bg-muted/30 rounded-lg p-2 sm:p-4 flex-1 overflow-auto max-h-[80vh]"
+              >
                 {/* A4 Paper */}
                 <div
-                  ref={letterRef}
-                  className="bg-white text-black shadow-2xl"
                   style={{
-                    width: '210mm',
-                    minHeight: '297mm',
-                    padding: '25mm 25mm 20mm 25mm',
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '11pt',
-                    lineHeight: '1.6',
-                    maxWidth: '100%',
-                    transform: 'scale(var(--paper-scale, 0.55))',
-                    transformOrigin: 'top center',
+                    width: `${210 * 3.7795 * paperScale}px`,
+                    height: `${297 * 3.7795 * paperScale}px`,
+                    margin: '0 auto',
+                    overflow: 'hidden',
                   }}
                 >
+                  <div
+                    ref={letterRef}
+                    className="bg-white text-black shadow-2xl"
+                    style={{
+                      width: '210mm',
+                      minHeight: '297mm',
+                      padding: '25mm 25mm 20mm 25mm',
+                      fontFamily: "'Inter', sans-serif",
+                      fontSize: '11pt',
+                      lineHeight: '1.6',
+                      transform: `scale(${paperScale})`,
+                      transformOrigin: 'top left',
+                    }}
+                  >
                   {/* Header */}
                   <div
                     style={{
@@ -331,6 +358,7 @@ joyanta.fi`;
                       </a>
                     </div>
                   </div>
+                </div>
                 </div>
               </div>
             </motion.div>
