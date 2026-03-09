@@ -210,11 +210,11 @@ joyanta.fi`;
               <div className="text-sm text-muted-foreground mb-3 font-mono">
                 Live Preview
               </div>
-              <div className="bg-muted/30 rounded-lg p-4 flex-1 flex items-start justify-center overflow-auto max-h-[80vh]">
+              <div className="bg-muted/30 rounded-lg p-2 sm:p-4 flex-1 flex items-start justify-center overflow-hidden max-h-[80vh]">
                 {/* A4 Paper */}
                 <div
                   ref={letterRef}
-                  className="bg-white text-black shadow-2xl"
+                  className="bg-white text-black shadow-2xl origin-top"
                   style={{
                     width: '210mm',
                     minHeight: '297mm',
@@ -222,7 +222,6 @@ joyanta.fi`;
                     fontFamily: "'Inter', sans-serif",
                     fontSize: '11pt',
                     lineHeight: '1.6',
-                    maxWidth: '100%',
                     transform: 'scale(var(--paper-scale, 0.55))',
                     transformOrigin: 'top center',
                   }}
