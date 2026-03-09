@@ -30,10 +30,12 @@ export const References = () => {
     {
       name: 'Jenny Pulkkinen',
       title: 'Finnish Teacher',
-      company: 'Kvarnen',
+      company: 'Kvarnen (Kronoby Folkhögskola)',
       description: 'Dedicated language instructor supporting my integration into Finnish society. Provided essential language training and cultural guidance.',
       email: 'jenny.pulkkinen@kvarnen.fi',
-      phone: '+358 50 5465294',
+      phone: '+358 40 650 1029',
+      website: 'https://kvarnen.fi/spraklinjen/',
+      photo: jennyPhoto,
     },
   ];
 
