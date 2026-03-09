@@ -66,7 +66,7 @@ export const Contact = () => {
                   <Button size="lg"
                     className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground shadow-[0_0_30px_rgba(0,188,255,0.3)] hover:shadow-[0_0_40px_rgba(0,188,255,0.5)] transition-all"
                     asChild>
-                    <a href="mailto:likejoy@gmail.com">
+                    <a href="mailto:joyanta.it@gmail.com">
                       <Send className="h-5 w-5" />
                       {t.contact.sendMessage}
                     </a>
