@@ -125,7 +125,7 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT-infrastruktuuri- ja palvelunhallinnan ammattilainen",
+      title: "IT-infrastruktuuri- ja tukiasiantuntija",
       subtitle: "Asun Suomessa | Avoin vakituisiin, määräaikaisiin ja kausiluonteisiin IT-tehtäviin",
       locationStatus: "",
       cta: "Ota yhteyttä",
