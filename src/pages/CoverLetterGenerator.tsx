@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { Input } from '@/components/ui/input';
@@ -21,7 +21,24 @@ const formatDate = () => {
 const CoverLetterGenerator = () => {
   const { toast } = useToast();
   const letterRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const [copied, setCopied] = useState(false);
+  const [paperScale, setPaperScale] = useState(0.55);
+
+  const updateScale = useCallback(() => {
+    if (containerRef.current) {
+      const containerWidth = containerRef.current.clientWidth - 16; // padding
+      const paperWidthPx = 210 * 3.7795; // 210mm in px
+      const scale = Math.min(containerWidth / paperWidthPx, 0.55);
+      setPaperScale(scale);
+    }
+  }, []);
+
+  useEffect(() => {
+    updateScale();
+    window.addEventListener('resize', updateScale);
+    return () => window.removeEventListener('resize', updateScale);
+  }, [updateScale]);
 
   const [form, setForm] = useState({
     recipient: '',
