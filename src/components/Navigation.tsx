@@ -85,7 +85,8 @@ export const Navigation = () => {
           </div>
 
           {/* Language Switcher */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
+            <ThemeToggle />
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full text-muted-foreground hover:text-foreground">
