@@ -118,13 +118,13 @@ export const Navigation = () => {
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`relative px-3 py-2 text-sm transition-colors rounded-md ${
-                  activeSection === item.id
+                  activeSection === item.id && isHomePage
                     ? 'text-foreground'
                     : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 {item.label}
-                {activeSection === item.id && (
+                {activeSection === item.id && isHomePage && (
                   <motion.div
                     layoutId="activeNav"
                     className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-primary rounded-full"
@@ -133,6 +133,24 @@ export const Navigation = () => {
                 )}
               </button>
             ))}
+            <button
+              onClick={() => { navigate('/apply'); setIsOpen(false); }}
+              className={`relative px-3 py-2 text-sm transition-colors rounded-md flex items-center gap-1.5 ${
+                location.pathname === '/apply'
+                  ? 'text-foreground'
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
+              <Wrench className="w-3.5 h-3.5" />
+              Tools
+              {location.pathname === '/apply' && (
+                <motion.div
+                  layoutId="activeNav"
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-primary rounded-full"
+                  transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                />
+              )}
+            </button>
           </div>
 
           {/* Language Switcher */}
