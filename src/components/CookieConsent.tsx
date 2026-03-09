@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Cookie, Settings, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 // Initialize Google Consent Mode v2 defaults
 const initConsentMode = () => {
@@ -70,7 +71,10 @@ export const CookieConsent = () => {
             </div>
 
             <p className="text-muted-foreground text-xs leading-relaxed mb-3">
-              This site uses cookies to personalize ads and analyze traffic. You can choose to accept or decline.
+              This site uses cookies to personalize ads and analyze traffic. Read our{' '}
+              <Link to="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>{' '}
+              and{' '}
+              <Link to="/terms-of-service" className="text-primary hover:underline">Terms of Service</Link>.
             </p>
 
             <AnimatePresence>
