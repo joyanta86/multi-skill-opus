@@ -16,7 +16,7 @@ const initConsentMode = () => {
 
 const updateConsent = (granted: boolean) => {
   const status = granted ? 'granted' : 'denied';
-  window.gtag?.('consent', 'update', {
+  (window as any).gtag?.('consent', 'update', {
     ad_storage: status,
     ad_user_data: status,
     ad_personalization: status,
