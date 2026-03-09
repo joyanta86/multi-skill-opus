@@ -15,30 +15,30 @@ export const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-muted/30">
+    <section id="contact" className="py-24 bg-muted/20">
       <div className="container px-4">
         <div className="max-w-4xl mx-auto">
-          <AnimatedSection className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+          <AnimatedSection className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent tracking-tight">
               {t.contact.title}
             </h2>
-            <p className="text-lg text-muted-foreground">{t.contact.subtitle}</p>
+            <p className="text-base text-muted-foreground">{t.contact.subtitle}</p>
           </AnimatedSection>
 
-          <StaggerContainer className="grid md:grid-cols-4 gap-6 mb-8">
+          <StaggerContainer className="grid md:grid-cols-4 gap-5 mb-10">
             {contactMethods.map((method, index) => {
               const Icon = method.icon;
               const content = (
-                <Card className={`p-6 bg-card border-border hover:border-primary/50 transition-all text-center h-full ${
-                  method.href ? 'cursor-pointer hover:shadow-[0_0_20px_rgba(0,188,255,0.2)]' : ''
+                <Card className={`p-6 bg-card border-border hover:border-primary/30 transition-all duration-300 text-center h-full ${
+                  method.href ? 'cursor-pointer' : ''
                 }`}>
                   <div className="flex flex-col items-center gap-3">
-                    <div className="p-3 rounded-full bg-primary/10">
-                      <Icon className="h-6 w-6 text-primary" />
+                    <div className="p-2.5 rounded-lg bg-primary/10">
+                      <Icon className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground mb-1">{method.title}</p>
-                      <p className="text-foreground font-medium">{method.value}</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{method.title}</p>
+                      <p className="text-foreground font-mono text-sm">{method.value}</p>
                     </div>
                   </div>
                 </Card>
@@ -58,13 +58,13 @@ export const Contact = () => {
 
           <AnimatedSection delay={0.3}>
             <Card className="p-8 bg-card border-border">
-              <div className="text-center space-y-4">
-                <p className="text-muted-foreground">
+              <div className="text-center space-y-5">
+                <p className="text-muted-foreground text-[15px]">
                   Looking for an experienced IT professional? Let's connect!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg"
-                    className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground shadow-[0_0_30px_rgba(0,188,255,0.3)] hover:shadow-[0_0_40px_rgba(0,188,255,0.5)] transition-all"
+                    className="gap-2.5 bg-primary hover:bg-primary/90 text-primary-foreground shadow-[var(--glow-primary)] transition-all duration-300 font-medium px-8"
                     asChild>
                     <a href="mailto:joyanta.it@gmail.com">
                       <Send className="h-5 w-5" />
@@ -72,7 +72,7 @@ export const Contact = () => {
                     </a>
                   </Button>
                   <Button size="lg" variant="outline"
-                    className="gap-2 border-[#25D366] text-[#25D366] hover:bg-[#25D366]/10"
+                    className="gap-2.5 border-border hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 font-medium"
                     asChild>
                     <a href="https://wa.me/358449874028" target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="h-5 w-5" />

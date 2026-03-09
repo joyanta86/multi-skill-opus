@@ -54,7 +54,7 @@ export const Navigation = () => {
       role="navigation"
       aria-label="Main navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-card/80 backdrop-blur-lg border-b border-border shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-card/90 backdrop-blur-xl border-b border-border' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -65,7 +65,7 @@ export const Navigation = () => {
               e.preventDefault();
               scrollToSection('hero');
             }}
-            className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:scale-105 transition-transform"
+            className="font-mono text-lg font-semibold text-primary hover:text-primary/80 transition-colors"
           >
             JD
           </a>
@@ -76,7 +76,7 @@ export const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors rounded-lg hover:bg-muted"
+                className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-md"
               >
                 {item.label}
               </button>
@@ -87,8 +87,8 @@ export const Navigation = () => {
           <div className="flex items-center gap-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="icon" className="rounded-full">
-                  <Globe className="h-5 w-5" />
+                <Button variant="ghost" size="icon" className="rounded-full text-muted-foreground hover:text-foreground">
+                  <Globe className="h-4.5 w-4.5" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-36">
@@ -107,9 +107,9 @@ export const Navigation = () => {
 
             {/* Mobile Menu Button */}
             <Button
-              variant="outline"
+              variant="ghost"
               size="icon"
-              className="md:hidden rounded-full"
+              className="md:hidden rounded-full text-muted-foreground hover:text-foreground"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -120,12 +120,12 @@ export const Navigation = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden pb-4 animate-fade-in">
-            <div className="flex flex-col space-y-2">
+            <div className="flex flex-col space-y-1">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors rounded-lg hover:bg-muted text-left"
+                  className="px-4 py-2.5 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-muted/50 text-left"
                 >
                   {item.label}
                 </button>

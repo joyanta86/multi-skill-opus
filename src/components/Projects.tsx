@@ -77,11 +77,11 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-muted/30">
+    <section id="projects" className="py-24 bg-muted/20">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-primary bg-clip-text text-transparent tracking-tight">
               {t.projects.title}
             </h2>
           </AnimatedSection>
@@ -89,33 +89,33 @@ export const Projects = () => {
           <StaggerContainer className="grid md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
               <StaggerItem key={index}>
-                <Card className="p-6 bg-card border-border hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,188,255,0.15)] group flex flex-col h-full">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="flex-shrink-0 p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                      <FolderOpen className="h-6 w-6 text-primary" />
+                <Card className="p-7 bg-card border-border hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-5">
+                    <div className="flex-shrink-0 p-2.5 rounded-lg bg-primary/10 group-hover:bg-primary/15 transition-colors">
+                      <FolderOpen className="h-5 w-5 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-foreground mb-2">{project.title}</h3>
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
-                        <Calendar className="h-4 w-4 text-primary" />
-                        <span>{project.period}</span>
+                      <h3 className="text-base font-semibold text-foreground mb-2 tracking-tight">{project.title}</h3>
+                      <div className="flex items-center gap-2 text-muted-foreground">
+                        <Calendar className="h-3.5 w-3.5 text-primary/60" />
+                        <span className="font-mono text-xs">{project.period}</span>
                       </div>
                     </div>
                     {project.link && (
                       <a href={project.link} target="_blank" rel="noopener noreferrer"
-                        className="flex-shrink-0 text-primary hover:text-primary/80 transition-colors">
-                        <ExternalLink className="h-5 w-5" />
+                        className="flex-shrink-0 text-muted-foreground hover:text-primary transition-colors">
+                        <ExternalLink className="h-4 w-4" />
                       </a>
                     )}
                   </div>
 
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
+                  <p className="text-muted-foreground mb-5 text-sm leading-relaxed">{project.description}</p>
 
-                  <div className="mb-4">
-                    <p className="text-sm font-semibold text-foreground mb-2">{t.projects.technologies}:</p>
-                    <div className="flex flex-wrap gap-2">
+                  <div className="mb-5">
+                    <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2.5">{t.projects.technologies}</p>
+                    <div className="flex flex-wrap gap-1.5">
                       {project.technologies.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="secondary" className="bg-primary/10 text-primary border-0">
+                        <Badge key={techIndex} variant="secondary" className="bg-muted text-muted-foreground border-0 font-mono text-xs px-2 py-0.5">
                           {tech}
                         </Badge>
                       ))}
@@ -123,11 +123,11 @@ export const Projects = () => {
                   </div>
 
                   <div className="mt-auto">
-                    <p className="text-sm font-semibold text-foreground mb-2">{t.projects.achievements}:</p>
-                    <ul className="space-y-1">
+                    <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2.5">{t.projects.achievements}</p>
+                    <ul className="space-y-1.5">
                       {project.achievements.slice(0, 3).map((achievement, achIndex) => (
                         <li key={achIndex} className="text-sm text-muted-foreground flex items-start">
-                          <span className="text-primary mr-2">›</span>
+                          <span className="text-primary/50 mr-2 mt-0.5 text-xs">▸</span>
                           <span>{achievement}</span>
                         </li>
                       ))}

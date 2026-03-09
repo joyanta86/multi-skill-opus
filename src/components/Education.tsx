@@ -7,37 +7,37 @@ export const Education = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="education" className="py-20 bg-muted/30">
+    <section id="education" className="py-24 bg-muted/20">
       <div className="container px-4">
         <div className="max-w-4xl mx-auto">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-primary bg-clip-text text-transparent tracking-tight">
               {t.education.title}
             </h2>
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            <Card className="p-8 bg-card border-border hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,188,255,0.15)]">
-              <div className="flex flex-col md:flex-row gap-6">
+            <Card className="p-8 bg-card border-border hover:border-primary/30 transition-all duration-300">
+              <div className="flex flex-col md:flex-row gap-8">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                    <GraduationCap className="h-8 w-8 text-primary" />
+                  <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <GraduationCap className="h-7 w-7 text-primary" />
                   </div>
                 </div>
                 <div className="flex-1 space-y-3">
-                  <h3 className="text-2xl font-semibold text-foreground">{t.education.degree}</h3>
-                  <p className="text-lg text-primary">{t.education.field}</p>
+                  <h3 className="text-xl font-semibold text-foreground tracking-tight">{t.education.degree}</h3>
+                  <p className="text-base text-primary/80 font-medium">{t.education.field}</p>
                   <div className="flex flex-wrap gap-4 text-muted-foreground">
                     <div className="flex items-center gap-2">
-                      <MapPin className="h-4 w-4 text-primary" />
+                      <MapPin className="h-3.5 w-3.5 text-primary/60" />
                       <a href="https://www.sub.ac.bd/" target="_blank" rel="noopener noreferrer"
-                        className="hover:text-primary transition-colors underline-offset-4 hover:underline">
+                        className="hover:text-primary transition-colors text-sm">
                         {t.education.university}
                       </a>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Calendar className="h-4 w-4 text-primary" />
-                      <span>{t.education.period}</span>
+                      <Calendar className="h-3.5 w-3.5 text-primary/60" />
+                      <span className="font-mono text-sm">{t.education.period}</span>
                     </div>
                   </div>
                 </div>

@@ -40,52 +40,52 @@ export const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-background">
+    <section id="experience" className="py-24 bg-background">
       <div className="container px-4">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-primary bg-clip-text text-transparent tracking-tight">
               {t.experience.title}
             </h2>
           </AnimatedSection>
 
           <div className="relative">
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary/30 hidden md:block" />
+            <div className="absolute left-8 top-0 bottom-0 w-px bg-border hidden md:block" />
 
             <StaggerContainer className="space-y-8">
               {experiences.map((exp, index) => (
                 <StaggerItem key={index} className="relative md:ml-16">
-                  <Card className="p-6 bg-card border-border hover:border-primary/50 transition-all hover:shadow-[0_0_30px_rgba(0,188,255,0.15)]">
-                    <div className="absolute -left-20 top-8 hidden md:block">
-                      <div className="w-4 h-4 rounded-full bg-primary shadow-[0_0_20px_rgba(0,188,255,0.5)]" />
+                  <Card className="p-8 bg-card border-border hover:border-primary/30 transition-all duration-300">
+                    <div className="absolute -left-20 top-10 hidden md:block">
+                      <div className="w-3 h-3 rounded-full bg-primary/80" />
                     </div>
 
-                    <div className="space-y-4">
+                    <div className="space-y-5">
                       <div>
                         {exp.headline && (
-                          <p className="text-sm text-primary/90 font-medium mb-3 italic">{exp.headline}</p>
+                          <p className="text-sm text-primary/80 font-medium mb-3 font-mono">{exp.headline}</p>
                         )}
-                        <h3 className="text-xl font-bold text-foreground mb-2">{exp.title}</h3>
+                        <h3 className="text-xl font-semibold text-foreground mb-3 tracking-tight">{exp.title}</h3>
                         <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                           <div className="flex items-center gap-2">
-                            <Briefcase className="h-4 w-4 text-primary" />
-                            <span className="font-semibold">{exp.company}</span>
+                            <Briefcase className="h-3.5 w-3.5 text-primary/60" />
+                            <span className="font-medium">{exp.company}</span>
                           </div>
                           <div className="flex items-center gap-2">
-                            <MapPin className="h-4 w-4 text-primary" />
+                            <MapPin className="h-3.5 w-3.5 text-primary/60" />
                             <span>{exp.location}</span>
                           </div>
                           <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-primary" />
-                            <span>{exp.period}</span>
+                            <Calendar className="h-3.5 w-3.5 text-primary/60" />
+                            <span className="font-mono text-xs">{exp.period}</span>
                           </div>
                         </div>
                       </div>
 
-                      <ul className="space-y-2">
+                      <ul className="space-y-2.5">
                         {exp.responsibilities.map((resp, respIndex) => (
-                          <li key={respIndex} className="text-muted-foreground flex items-start">
-                            <span className="text-primary mr-2 mt-1">•</span>
+                          <li key={respIndex} className="text-muted-foreground flex items-start text-[15px]">
+                            <span className="text-primary/50 mr-2.5 mt-1.5 text-xs">▸</span>
                             <span>{resp}</span>
                           </li>
                         ))}

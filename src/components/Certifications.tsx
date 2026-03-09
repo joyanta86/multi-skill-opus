@@ -22,28 +22,28 @@ export const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 bg-background">
+    <section id="certifications" className="py-24 bg-background">
       <div className="container px-4">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-primary bg-clip-text text-transparent tracking-tight">
               {t.certifications.title}
             </h2>
           </AnimatedSection>
 
-          <StaggerContainer className="grid md:grid-cols-2 gap-6 mb-8">
+          <StaggerContainer className="grid md:grid-cols-2 gap-5 mb-10">
             {certifications.map((cert, index) => (
               <StaggerItem key={index}>
-                <Card className="p-6 bg-card border-border hover:border-primary/50 transition-all hover:shadow-[0_0_20px_rgba(0,188,255,0.15)] group h-full">
+                <Card className="p-6 bg-card border-border hover:border-primary/30 transition-all duration-300 group h-full">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                      <Award className="h-6 w-6 text-primary" />
+                    <div className="flex-shrink-0 p-2 rounded-lg bg-primary/10 group-hover:bg-primary/15 transition-colors">
+                      <Award className="h-5 w-5 text-primary" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-foreground mb-1">{cert.name}</h3>
-                      <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+                      <h3 className="text-sm font-semibold text-foreground mb-1 tracking-tight">{cert.name}</h3>
+                      <p className="text-xs text-muted-foreground font-mono">{cert.issuer}</p>
                       {cert.note && (
-                        <p className="text-xs text-muted-foreground/70 italic mt-1">{cert.note}</p>
+                        <p className="text-xs text-muted-foreground/60 italic mt-1.5">{cert.note}</p>
                       )}
                     </div>
                   </div>
@@ -53,13 +53,13 @@ export const Certifications = () => {
           </StaggerContainer>
 
           <AnimatedSection delay={0.3}>
-            <Card className="p-6 bg-card border-border">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Professional Affiliations</h3>
+            <Card className="p-7 bg-card border-border">
+              <h3 className="text-base font-semibold text-foreground mb-4 tracking-tight">Professional Affiliations</h3>
               <div className="space-y-3">
                 {affiliations.map((affiliation, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <p className="text-muted-foreground">{affiliation}</p>
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                    <p className="text-muted-foreground text-sm font-mono">{affiliation}</p>
                   </div>
                 ))}
               </div>

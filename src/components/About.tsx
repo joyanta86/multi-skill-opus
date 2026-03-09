@@ -16,48 +16,48 @@ export const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-24 bg-background">
       <div className="container px-4">
         <div className="max-w-5xl mx-auto">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-primary bg-clip-text text-transparent tracking-tight">
               {t.about.title}
             </h2>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
             <AnimatedSection className="md:col-span-2" delay={0.1}>
-              <Card className="p-6 bg-card border-border hover:border-primary/50 transition-colors">
-                <div className="flex flex-col md:flex-row gap-6 items-start">
+              <Card className="p-8 bg-card border-border hover:border-primary/30 transition-colors duration-300">
+                <div className="flex flex-col md:flex-row gap-8 items-start">
                   <img 
                     src={profilePhoto} 
-                    alt="Joyanta Dey - IT Infrastructure & Service Management Professional" 
-                    className="w-32 h-32 rounded-lg object-cover border-2 border-primary/30 shadow-lg flex-shrink-0"
+                    alt="Joyanta Dey - IT Infrastructure & Support Specialist" 
+                    className="w-28 h-28 rounded-lg object-cover border border-border flex-shrink-0"
                   />
                   <div className="flex-1 space-y-4">
-                    <p className="text-muted-foreground leading-relaxed">{t.about.description1}</p>
-                    <p className="text-muted-foreground leading-relaxed">{t.about.description2}</p>
-                    <p className="text-muted-foreground leading-relaxed">{t.about.description3}</p>
-                    <p className="text-muted-foreground leading-relaxed">{t.about.description4}</p>
+                    <p className="text-muted-foreground leading-relaxed text-[15px]">{t.about.description1}</p>
+                    <p className="text-muted-foreground leading-relaxed text-[15px]">{t.about.description2}</p>
+                    <p className="text-muted-foreground leading-relaxed text-[15px]">{t.about.description3}</p>
+                    <p className="text-muted-foreground leading-relaxed text-[15px]">{t.about.description4}</p>
                   </div>
                 </div>
               </Card>
             </AnimatedSection>
 
-            <StaggerContainer className="space-y-4">
+            <StaggerContainer className="space-y-3">
               {contactInfo.map((item, index) => {
                 const Icon = item.icon;
                 const content = (
                   <Card
-                    className={`p-4 bg-card border-border hover:border-primary/50 transition-all ${
-                      item.href ? 'cursor-pointer hover:shadow-[0_0_20px_rgba(0,188,255,0.2)]' : ''
+                    className={`p-4 bg-card border-border hover:border-primary/30 transition-all duration-300 ${
+                      item.href ? 'cursor-pointer' : ''
                     }`}
                   >
                     <div className="flex items-start gap-3">
-                      <Icon className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                      <Icon className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                       <div className="flex-1 min-w-0">
-                        <p className="text-sm text-muted-foreground">{item.label}</p>
-                        <p className="text-foreground font-medium break-words">{item.value}</p>
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider">{item.label}</p>
+                        <p className="text-foreground font-mono text-sm mt-0.5 break-words">{item.value}</p>
                       </div>
                     </div>
                   </Card>
