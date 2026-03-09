@@ -29,6 +29,7 @@ const Index = () => {
       </main>
       <Footer />
       <CookieConsent />
+      <ScrollToTop />
     </div>
   );
 };
