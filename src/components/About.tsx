@@ -26,7 +26,7 @@ export const About = () => {
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <AnimatedSection className="md:col-span-2" delay={0.1}>
+            <AnimatedSection className="md:col-span-2" delay={0.1} direction="left">
               <Card className="p-8 bg-card border-border hover:border-primary/30 transition-colors duration-300">
                 <div className="flex flex-col md:flex-row gap-8 items-start">
                   <img 

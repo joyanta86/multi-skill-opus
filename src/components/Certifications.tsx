@@ -52,7 +52,7 @@ export const Certifications = () => {
             ))}
           </StaggerContainer>
 
-          <AnimatedSection delay={0.3}>
+          <AnimatedSection delay={0.3} direction="right">
             <Card className="p-7 bg-card border-border">
               <h3 className="text-base font-semibold text-foreground mb-4 tracking-tight">Professional Affiliations</h3>
               <div className="space-y-3">
