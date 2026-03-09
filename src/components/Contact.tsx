@@ -8,7 +8,7 @@ export const Contact = () => {
   const { t } = useLanguage();
 
   const contactMethods = [
-    { icon: Mail, title: t.about.email, value: 'likejoy@gmail.com', href: 'mailto:likejoy@gmail.com' },
+    { icon: Mail, title: t.about.email, value: 'joyanta.it@gmail.com', href: 'mailto:joyanta.it@gmail.com' },
     { icon: Phone, title: t.about.phone, value: '+358 449874028', href: 'tel:+358449874028' },
     { icon: MessageCircle, title: t.about.whatsapp, value: '+358 449874028', href: 'https://wa.me/358449874028' },
     { icon: MapPin, title: t.about.location, value: 'Kokkola, Finland' },
@@ -66,7 +66,7 @@ export const Contact = () => {
                   <Button size="lg"
                     className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground shadow-[0_0_30px_rgba(0,188,255,0.3)] hover:shadow-[0_0_40px_rgba(0,188,255,0.5)] transition-all"
                     asChild>
-                    <a href="mailto:likejoy@gmail.com">
+                    <a href="mailto:joyanta.it@gmail.com">
                       <Send className="h-5 w-5" />
                       {t.contact.sendMessage}
                     </a>

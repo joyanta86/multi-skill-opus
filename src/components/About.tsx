@@ -9,7 +9,7 @@ export const About = () => {
 
   const contactInfo = [
     { icon: MapPin, label: t.about.location, value: t.about.locationValue },
-    { icon: Mail, label: t.about.email, value: 'likejoy@gmail.com', href: 'mailto:likejoy@gmail.com' },
+    { icon: Mail, label: t.about.email, value: 'joyanta.it@gmail.com', href: 'mailto:joyanta.it@gmail.com' },
     { icon: Phone, label: t.about.phone, value: '+358 449874028', href: 'tel:+358449874028' },
     { icon: Linkedin, label: t.about.linkedin, value: 'joyantadey', href: 'https://www.linkedin.com/in/joyantadey/' },
     { icon: Car, label: t.about.drivingLicense, value: t.about.drivingLicenseValue },

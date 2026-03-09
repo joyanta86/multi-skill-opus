@@ -19,7 +19,7 @@ export const Footer = () => {
 
             <div className="flex items-center gap-4">
               <a
-                href="mailto:likejoy@gmail.com"
+                href="mailto:joyanta.it@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
