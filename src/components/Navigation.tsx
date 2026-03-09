@@ -52,16 +52,24 @@ export const Navigation = () => {
   }, []);
 
   const scrollToSection = useCallback((id: string) => {
+    if (!isHomePage) {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 300);
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
-      // Add a brief highlight flash
       element.classList.add('section-highlight');
       setTimeout(() => element.classList.remove('section-highlight'), 1000);
-
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       setIsOpen(false);
     }
-  }, []);
+  }, [isHomePage, navigate]);
 
   const navItems = [
     { id: 'about', label: t.nav.about },
