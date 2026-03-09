@@ -1,9 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Globe, Wrench } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { motion } from 'framer-motion';
+import { useNavigate, useLocation } from 'react-router-dom';
 import {
   DropdownMenu,
   DropdownMenuContent,
