@@ -1,6 +1,7 @@
 import { MapPin, Mail, Phone, Linkedin, Car } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/motion/AnimatedSection';
 import profilePhoto from '@/assets/profile-photo.jpg';
 
 export const About = () => {
@@ -18,12 +19,14 @@ export const About = () => {
     <section id="about" className="py-20 bg-background">
       <div className="container px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-primary bg-clip-text text-transparent">
-            {t.about.title}
-          </h2>
+          <AnimatedSection>
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-primary bg-clip-text text-transparent">
+              {t.about.title}
+            </h2>
+          </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="md:col-span-2 space-y-6">
+            <AnimatedSection className="md:col-span-2" delay={0.1}>
               <Card className="p-6 bg-card border-border hover:border-primary/50 transition-colors">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <img 
@@ -32,29 +35,20 @@ export const About = () => {
                     className="w-32 h-32 rounded-lg object-cover border-2 border-primary/30 shadow-lg flex-shrink-0"
                   />
                   <div className="flex-1 space-y-4">
-                    <p className="text-muted-foreground leading-relaxed">
-                      {t.about.description1}
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {t.about.description2}
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {t.about.description3}
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {t.about.description4}
-                    </p>
+                    <p className="text-muted-foreground leading-relaxed">{t.about.description1}</p>
+                    <p className="text-muted-foreground leading-relaxed">{t.about.description2}</p>
+                    <p className="text-muted-foreground leading-relaxed">{t.about.description3}</p>
+                    <p className="text-muted-foreground leading-relaxed">{t.about.description4}</p>
                   </div>
                 </div>
               </Card>
-            </div>
+            </AnimatedSection>
 
-            <div className="space-y-4">
+            <StaggerContainer className="space-y-4">
               {contactInfo.map((item, index) => {
                 const Icon = item.icon;
                 const content = (
                   <Card
-                    key={index}
                     className={`p-4 bg-card border-border hover:border-primary/50 transition-all ${
                       item.href ? 'cursor-pointer hover:shadow-[0_0_20px_rgba(0,188,255,0.2)]' : ''
                     }`}
@@ -69,20 +63,23 @@ export const About = () => {
                   </Card>
                 );
 
-                return item.href ? (
-                  <a
-                    key={index}
-                    href={item.href}
-                    target={item.href.startsWith('http') ? '_blank' : undefined}
-                    rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  >
-                    {content}
-                  </a>
-                ) : (
-                  content
+                return (
+                  <StaggerItem key={index}>
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        target={item.href.startsWith('http') ? '_blank' : undefined}
+                        rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                      >
+                        {content}
+                      </a>
+                    ) : (
+                      content
+                    )}
+                  </StaggerItem>
                 );
               })}
-            </div>
+            </StaggerContainer>
           </div>
         </div>
       </div>

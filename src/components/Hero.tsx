@@ -2,6 +2,7 @@ import { ArrowDown, Download, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { motion } from 'framer-motion';
 import profilePhoto from '@/assets/profile-photo.jpg';
 
 export const Hero = () => {
@@ -28,14 +29,25 @@ export const Hero = () => {
       </div>
 
       <div className="container relative z-10 px-4">
-        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          <div className="flex justify-center mb-6">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <motion.div
+            className="flex justify-center mb-6"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+          >
             <Avatar className="h-32 w-32 border-4 border-primary/30 shadow-[0_0_30px_rgba(0,188,255,0.3)]">
               <AvatarImage src={profilePhoto} alt="Joyanta Dey - IT Infrastructure Specialist" />
               <AvatarFallback>JD</AvatarFallback>
             </Avatar>
-          </div>
-          <div className="space-y-4">
+          </motion.div>
+
+          <motion.div
+            className="space-y-4"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' }}
+          >
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Joyanta Dey
             </h1>
@@ -45,9 +57,14 @@ export const Hero = () => {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               {t.hero.subtitle}
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <motion.div
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6, ease: 'easeOut' }}
+          >
             <Button
               size="lg"
               className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground shadow-[0_0_30px_rgba(0,188,255,0.3)] hover:shadow-[0_0_40px_rgba(0,188,255,0.5)] transition-all"
@@ -67,12 +84,21 @@ export const Hero = () => {
                 {t.hero.downloadCV}
               </a>
             </Button>
-          </div>
+          </motion.div>
 
-
-          <div className="pt-12 animate-bounce">
-            <ArrowDown className="h-6 w-6 mx-auto text-primary" />
-          </div>
+          <motion.div
+            className="pt-12"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 1 }}
+          >
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              <ArrowDown className="h-6 w-6 mx-auto text-primary" />
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>
