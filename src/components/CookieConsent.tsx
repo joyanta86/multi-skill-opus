@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Cookie, Settings, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 // Initialize Google Consent Mode v2 defaults
 const initConsentMode = () => {
@@ -28,6 +29,7 @@ const updateConsent = (granted: boolean) => {
 export const CookieConsent = () => {
   const [visible, setVisible] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     initConsentMode();
@@ -60,7 +62,7 @@ export const CookieConsent = () => {
             <div className="flex items-start justify-between mb-3">
               <div className="flex items-center gap-2">
                 <Cookie className="w-5 h-5 text-primary" />
-                <h3 className="font-semibold text-foreground text-sm">Cookie Consent</h3>
+                <h3 className="font-semibold text-foreground text-sm">{t.cookies.title}</h3>
               </div>
               <button
                 onClick={() => handleConsent(false)}
@@ -71,10 +73,10 @@ export const CookieConsent = () => {
             </div>
 
             <p className="text-muted-foreground text-xs leading-relaxed mb-3">
-              This site uses cookies to personalize ads and analyze traffic. Read our{' '}
-              <Link to="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>{' '}
-              and{' '}
-              <Link to="/terms-of-service" className="text-primary hover:underline">Terms of Service</Link>.
+              {t.cookies.description}{' '}
+              <Link to="/privacy-policy" className="text-primary hover:underline">{t.cookies.privacyPolicy}</Link>{' '}
+              {t.cookies.and}{' '}
+              <Link to="/terms-of-service" className="text-primary hover:underline">{t.cookies.termsOfService}</Link>.
             </p>
 
             <AnimatePresence>
@@ -87,16 +89,16 @@ export const CookieConsent = () => {
                 >
                   <div className="space-y-2 text-xs text-muted-foreground border-t border-border pt-3">
                     <div className="flex justify-between">
-                      <span>Essential cookies</span>
-                      <span className="text-primary font-medium">Always on</span>
+                      <span>{t.cookies.essentialCookies}</span>
+                      <span className="text-primary font-medium">{t.cookies.alwaysOn}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Ad storage & personalization</span>
-                      <span>Requires consent</span>
+                      <span>{t.cookies.adStorage}</span>
+                      <span>{t.cookies.requiresConsent}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Analytics storage</span>
-                      <span>Requires consent</span>
+                      <span>{t.cookies.analyticsStorage}</span>
+                      <span>{t.cookies.requiresConsent}</span>
                     </div>
                   </div>
                 </motion.div>
@@ -110,7 +112,7 @@ export const CookieConsent = () => {
                 onClick={() => handleConsent(false)}
                 className="flex-1 text-xs h-8"
               >
-                Decline
+                {t.cookies.decline}
               </Button>
               <Button
                 variant="ghost"
@@ -125,7 +127,7 @@ export const CookieConsent = () => {
                 onClick={() => handleConsent(true)}
                 className="flex-1 text-xs h-8 bg-primary text-primary-foreground hover:bg-primary/90"
               >
-                Accept All
+                {t.cookies.acceptAll}
               </Button>
             </div>
           </div>
