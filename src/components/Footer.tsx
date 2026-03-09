@@ -21,6 +21,10 @@ export const Footer = () => {
                 <Link to="/privacy-policy" className="text-muted-foreground text-xs hover:text-primary transition-colors">
                   Privacy Policy
                 </Link>
+                <span className="text-muted-foreground/40 text-xs">·</span>
+                <Link to="/terms-of-service" className="text-muted-foreground text-xs hover:text-primary transition-colors">
+                  Terms of Service
+                </Link>
               </div>
             </div>
 
