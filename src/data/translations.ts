@@ -12,7 +12,7 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT Infrastructure & Service Management Professional",
+      title: "IT Infrastructure & Support Specialist",
       subtitle: "Based in Finland | Open to Permanent, Contract, and Seasonal IT Opportunities",
       locationStatus: "",
       cta: "Contact Me",
