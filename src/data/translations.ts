@@ -210,6 +210,20 @@ export const translations = {
       rights: "Asun Suomessa | Voimassa oleva työnteko-oikeus | Avoin sopiviin IT-tehtäviin",
       builtWith: "Rakennettu Reactilla, TypeScriptillä ja Tailwind CSS:llä",
     },
+    cookies: {
+      title: "Evästeasetukset",
+      description: "Tämä sivusto käyttää evästeitä mainosten personointiin ja liikenteen analysointiin. Lue",
+      privacyPolicy: "Tietosuojakäytäntö",
+      and: "ja",
+      termsOfService: "Käyttöehdot",
+      decline: "Hylkää",
+      acceptAll: "Hyväksy kaikki",
+      essentialCookies: "Välttämättömät evästeet",
+      alwaysOn: "Aina päällä",
+      adStorage: "Mainostallennus ja personointi",
+      analyticsStorage: "Analytiikkatallennus",
+      requiresConsent: "Vaatii suostumuksen",
+    },
   },
   bn: {
     nav: {
