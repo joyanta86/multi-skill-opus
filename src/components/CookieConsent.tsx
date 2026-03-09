@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 // Initialize Google Consent Mode v2 defaults
 const initConsentMode = () => {
-  window.gtag?.('consent', 'default', {
+  (window as any).gtag?.('consent', 'default', {
     ad_storage: 'denied',
     ad_user_data: 'denied',
     ad_personalization: 'denied',
