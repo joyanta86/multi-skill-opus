@@ -76,7 +76,6 @@ export const CookieConsent = () => {
               and{' '}
               <Link to="/terms-of-service" className="text-primary hover:underline">Terms of Service</Link>.
             </p>
-            </p>
 
             <AnimatePresence>
               {showDetails && (
