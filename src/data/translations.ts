@@ -97,6 +97,20 @@ export const translations = {
       rights: "Based in Finland | Valid work permit | Open to suitable IT opportunities",
       builtWith: "Built with React, TypeScript & Tailwind CSS",
     },
+    cookies: {
+      title: "Cookie Consent",
+      description: "This site uses cookies to personalize ads and analyze traffic. Read our",
+      privacyPolicy: "Privacy Policy",
+      and: "and",
+      termsOfService: "Terms of Service",
+      decline: "Decline",
+      acceptAll: "Accept All",
+      essentialCookies: "Essential cookies",
+      alwaysOn: "Always on",
+      adStorage: "Ad storage & personalization",
+      analyticsStorage: "Analytics storage",
+      requiresConsent: "Requires consent",
+    },
   },
   fi: {
     nav: {
