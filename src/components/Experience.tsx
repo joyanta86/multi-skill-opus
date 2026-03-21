@@ -10,6 +10,7 @@ export const Experience = () => {
     {
       title: 'Senior Assistant Manager, IT',
       company: 'General Pharmaceuticals Ltd.',
+      companyUrl: 'https://generalpharma.com/',
       location: 'Dhaka, Bangladesh',
       period: 'April 2021 - September 2024',
       headline: 'Led enterprise infrastructure modernization and digital toll system deployment.',
