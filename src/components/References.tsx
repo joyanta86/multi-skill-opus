@@ -13,9 +13,9 @@ export const References = () => {
   const references = [
     {
       name: 'Saiful Islam',
-      title: 'Former Colleague / University Friend',
-      company: 'Tiefenbacher',
-      description: 'Expert in IT and Business Intelligence with strong strategic thinking and collaboration skills. Witnessed my professional growth and technical expertise firsthand.',
+      title: 'IT Support Specialist',
+      company: 'Tiefenbacher Group',
+      description: 'Passionate about IT with expertise in support and infrastructure. Based in Hamburg, Germany. A former colleague and university friend who witnessed my professional growth and technical expertise firsthand.',
       email: 's.islam@tiefenbacher.com',
       phone: '+49 40441809278',
       linkedin: 'https://www.linkedin.com/in/saif102/',
@@ -23,9 +23,9 @@ export const References = () => {
     },
     {
       name: 'Ashik Hasan',
-      title: 'Senior Manager, Human Resources',
-      company: 'General Pharmaceuticals Ltd.',
-      description: 'Senior HR leader managing recruitment and employee development. Provided valuable guidance and mentorship during my tenure at the company.',
+      title: 'Manager, Human Resources',
+      company: 'Aristopharma Ltd.',
+      description: 'Seasoned HR professional with 17+ years of experience, currently managing human resources at Aristopharma Ltd. Previously provided valuable guidance and mentorship during my tenure at General Pharmaceuticals Ltd.',
       email: 'ashik.hr@generalpharma.com',
       phone: '+880 1844095200',
       linkedin: 'https://www.linkedin.com/in/ashik-hasan-79127b41/',
