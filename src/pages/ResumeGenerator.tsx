@@ -299,7 +299,7 @@ const ResumeGenerator = () => {
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '3px' }}>
                     <div>
                       <span style={{ fontWeight: 700 }}>BSc in Computer Science &amp; Engineering</span>
-                      <span style={{ color: '#555' }}> — Northern University Bangladesh</span>
+                      <span style={{ color: '#555' }}> — <a href="https://www.sub.ac.bd/" target="_blank" rel="noopener noreferrer" style={{ color: '#555', textDecoration: 'underline' }}>State University of Bangladesh</a></span>
                     </div>
                     <div style={{ fontSize: '8.5pt', color: '#666' }}>2010 – 2014</div>
                   </div>
