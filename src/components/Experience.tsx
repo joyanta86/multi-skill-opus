@@ -10,6 +10,7 @@ export const Experience = () => {
     {
       title: 'Senior Assistant Manager, IT',
       company: 'General Pharmaceuticals Ltd.',
+      companyUrl: 'https://generalpharma.com/',
       location: 'Dhaka, Bangladesh',
       period: 'April 2021 - September 2024',
       headline: 'Led enterprise infrastructure modernization and digital toll system deployment.',
@@ -25,6 +26,7 @@ export const Experience = () => {
     {
       title: 'IT Infrastructure Administrator',
       company: 'Orion Infrastructure Ltd.',
+      companyUrl: 'https://www.orion-group.net/',
       location: 'Dhaka, Bangladesh',
       period: 'September 2013 - April 2021',
       headline: 'Worked with G.E.A France to deploy Bangladesh\'s first digital toll collection system integrating ETC, CCTV, IP-PBX, and IoT devices.',
@@ -69,7 +71,11 @@ export const Experience = () => {
                         <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                           <div className="flex items-center gap-2">
                             <Briefcase className="h-3.5 w-3.5 text-primary/60" />
-                            <span className="font-medium">{exp.company}</span>
+                            {exp.companyUrl ? (
+                              <a href={exp.companyUrl} target="_blank" rel="noopener noreferrer" className="font-medium hover:text-primary transition-colors">{exp.company}</a>
+                            ) : (
+                              <span className="font-medium">{exp.company}</span>
+                            )}
                           </div>
                           <div className="flex items-center gap-2">
                             <MapPin className="h-3.5 w-3.5 text-primary/60" />
