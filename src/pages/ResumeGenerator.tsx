@@ -232,7 +232,7 @@ const ResumeGenerator = () => {
                         <span style={{ fontWeight: 700, fontSize: '10pt' }}>
                           IT Manager &amp; Infrastructure Lead
                         </span>
-                        <span style={{ color: '#555' }}> — General Pharmaceuticals Ltd.</span>
+                        <span style={{ color: '#555' }}> — <a href="https://generalpharma.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#555', textDecoration: 'underline' }}>General Pharmaceuticals Ltd.</a></span>
                       </div>
                       <div style={{ fontSize: '8.5pt', color: '#666', whiteSpace: 'nowrap' }}>
                         2016 – 2024
