@@ -26,6 +26,7 @@ export const Experience = () => {
     {
       title: 'IT Infrastructure Administrator',
       company: 'Orion Infrastructure Ltd.',
+      companyUrl: 'https://www.orion-group.net/',
       location: 'Dhaka, Bangladesh',
       period: 'September 2013 - April 2021',
       headline: 'Worked with G.E.A France to deploy Bangladesh\'s first digital toll collection system integrating ETC, CCTV, IP-PBX, and IoT devices.',
