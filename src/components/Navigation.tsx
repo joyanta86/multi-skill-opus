@@ -133,61 +133,7 @@ export const Navigation = () => {
                 )}
               </button>
             ))}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button
-                  className={`relative px-3 py-2 text-sm transition-colors rounded-md flex items-center gap-1.5 ${
-                    ['/apply', '/resume'].includes(location.pathname)
-                      ? 'text-foreground'
-                      : 'text-muted-foreground hover:text-foreground'
-                  }`}
-                >
-                  <Wrench className="w-3.5 h-3.5" />
-                  Tools
-                  {['/apply', '/resume'].includes(location.pathname) && (
-                    <motion.div
-                      layoutId="activeNav"
-                      className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-primary rounded-full"
-                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                    />
-                  )}
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48">
-                <DropdownMenuItem onClick={() => navigate('/apply')} className={location.pathname === '/apply' ? 'bg-muted' : ''}>
-                  <FileText className="w-4 h-4 mr-2" />
-                  Cover Letter Generator
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => navigate('/resume')} className={location.pathname === '/resume' ? 'bg-muted' : ''}>
-                  <FileUser className="w-4 h-4 mr-2" />
-                  Smart Resume
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
 
-          {/* Language Switcher */}
-          <div className="flex items-center gap-1">
-            <ThemeToggle />
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="rounded-full text-muted-foreground hover:text-foreground">
-                  <Globe className="h-4.5 w-4.5" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-36">
-                {languages.map((lang) => (
-                  <DropdownMenuItem
-                    key={lang.code}
-                    onClick={() => setLanguage(lang.code as 'en' | 'fi' | 'bn' | 'no' | 'sv')}
-                    className={language === lang.code ? 'bg-muted' : ''}
-                  >
-                    <span className="mr-2">{lang.flag}</span>
-                    {lang.label}
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
 
             {/* Mobile Menu Button */}
             <Button
