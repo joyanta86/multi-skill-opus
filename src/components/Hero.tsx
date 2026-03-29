@@ -52,10 +52,10 @@ export const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-bold bg-gradient-primary bg-clip-text text-transparent tracking-tight">
               Joyanta Dey
             </h1>
-            <h2 className="text-base md:text-lg font-semibold text-foreground/90 max-w-3xl mx-auto tracking-tight">
+            <h2 className="text-lg md:text-xl font-bold text-foreground max-w-3xl mx-auto tracking-tight">
               {t.hero.title}
             </h2>
-            <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto font-mono">
+            <p className="text-sm md:text-base text-primary font-semibold max-w-2xl mx-auto font-mono">
               {t.hero.subtitle}
             </p>
           </motion.div>
