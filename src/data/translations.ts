@@ -12,13 +12,13 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT Infrastructure Specialist | System Administrator | IT Support Engineer",
-      subtitle: "Based in Finland | Open to relocation across Finland | 12+ years of experience in IT infrastructure, networking, and security",
+      title: "IT Support Specialist | System Administrator | IT Infrastructure Engineer",
+      subtitle: "Based in Finland · Open to relocation · Available immediately · 12+ years in enterprise IT",
       locationStatus: "",
       cta: "Contact Me",
       downloadCV: "Download CV",
       finnishIntro: "",
-      valueStatement: "I design, implement, and support secure and scalable IT systems for enterprise environments.",
+      valueStatement: "I keep IT systems running. From Active Directory to firewalls, I solve problems fast and build infrastructure that lasts.",
     },
     about: {
       title: "Professional Summary",
