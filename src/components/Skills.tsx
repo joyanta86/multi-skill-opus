@@ -1,4 +1,4 @@
-import { Server, Wrench, Globe } from 'lucide-react';
+import { Server, Cloud, Network, Shield, Wrench, Globe } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/motion/AnimatedSection';
@@ -8,7 +8,10 @@ export const Skills = () => {
 
   const skillCategories = [
     { icon: Server, title: t.skills.categories.infrastructure, skills: t.skills.infrastructureList },
-    { icon: Wrench, title: t.skills.categories.support, skills: t.skills.supportList },
+    { icon: Cloud, title: t.skills.categories.cloud, skills: t.skills.cloudList },
+    { icon: Network, title: t.skills.categories.networking, skills: t.skills.networkingList },
+    { icon: Shield, title: t.skills.categories.security, skills: t.skills.securityList },
+    { icon: Wrench, title: t.skills.categories.tools, skills: t.skills.toolsList },
     { icon: Globe, title: t.skills.categories.languages, skills: t.skills.languagesList },
   ];
 
@@ -22,19 +25,19 @@ export const Skills = () => {
             </h2>
           </AnimatedSection>
 
-          <StaggerContainer className="grid md:grid-cols-3 gap-8">
+          <StaggerContainer className="grid md:grid-cols-3 gap-6">
             {skillCategories.map((category, index) => {
               const Icon = category.icon;
               return (
                 <StaggerItem key={index}>
-                  <Card className="p-8 bg-card border-border hover:border-primary/40 transition-all duration-300 group h-full">
-                    <div className="flex items-center gap-3 mb-6">
+                  <Card className="p-6 bg-card border-border hover:border-primary/40 transition-all duration-300 group h-full">
+                    <div className="flex items-center gap-3 mb-5">
                       <div className="p-2.5 rounded-lg bg-primary/10 group-hover:bg-primary/15 transition-colors">
                         <Icon className="h-5 w-5 text-primary" />
                       </div>
                       <h3 className="text-base font-semibold text-foreground tracking-tight">{category.title}</h3>
                     </div>
-                    <ul className="space-y-3">
+                    <ul className="space-y-2.5">
                       {category.skills.map((skill, skillIndex) => (
                         <li key={skillIndex} className="text-muted-foreground flex items-start">
                           <span className="text-primary/60 mr-2.5 mt-0.5 text-xs">▸</span>

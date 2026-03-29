@@ -3,10 +3,12 @@ import { Navigation } from '@/components/Navigation';
 import { Hero } from '@/components/Hero';
 import { About } from '@/components/About';
 import { Skills } from '@/components/Skills';
+import { Achievements } from '@/components/Achievements';
 import { Experience } from '@/components/Experience';
 import { Education } from '@/components/Education';
 import { Certifications } from '@/components/Certifications';
 import { Projects } from '@/components/Projects';
+import { Availability } from '@/components/Availability';
 import { References } from '@/components/References';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
@@ -31,10 +33,12 @@ const Index = () => {
           <Hero />
           <About />
           <Skills />
+          <Achievements />
           <Experience />
           <Education />
           <Certifications />
           <Projects />
+          <Availability />
           <References />
           <Contact />
         </main>

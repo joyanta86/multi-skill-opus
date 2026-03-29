@@ -22,7 +22,7 @@ export const Contact = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent tracking-tight">
               {t.contact.title}
             </h2>
-            <p className="text-base text-muted-foreground">{t.contact.subtitle}</p>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto">{t.contact.subtitle}</p>
           </AnimatedSection>
 
           <StaggerContainer className="grid md:grid-cols-4 gap-5 mb-10">
@@ -59,8 +59,11 @@ export const Contact = () => {
           <AnimatedSection delay={0.3}>
             <Card className="p-8 bg-card border-border">
               <div className="text-center space-y-5">
+                <p className="text-foreground font-medium text-base">
+                  Open to IT Support, System Administrator, and Infrastructure roles across Finland.
+                </p>
                 <p className="text-muted-foreground text-[15px]">
-                  Looking for an experienced IT professional? Let's connect!
+                  Available for immediate start. Feel free to reach out!
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg"
