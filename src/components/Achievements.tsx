@@ -7,14 +7,14 @@ export const Achievements = () => {
   const { t } = useLanguage();
 
   const achievements = [
-    "Implemented High Availability firewall solutions using Fortinet FortiGate and Checkpoint, achieving 99.9% network uptime",
-    "Designed and deployed Active Directory infrastructure serving 500+ users across multiple enterprise sites",
-    "Led IT infrastructure for Bangladesh's first digital toll management system in partnership with G.E.A. France",
-    "Deployed CrowdStrike EDR across enterprise endpoints, reducing security incidents by 40%",
-    "Built and deployed IT asset management (Snipe-IT) and ticketing systems (osTicket), improving support response times by 35%",
-    "Designed IP telephony systems with 99.9% uptime for enterprise communication",
-    "Optimized LAN/WAN architecture, improving toll collection system efficiency by 15%",
-    "Implemented virtualization technologies reducing hardware costs by 20%",
+    "99.9% uptime — Deployed HA firewalls (Fortinet + Checkpoint) across enterprise network",
+    "500+ users — Built and managed Active Directory infrastructure across multiple sites",
+    "40% fewer security incidents — Rolled out CrowdStrike EDR to all endpoints",
+    "35% faster support response — Implemented ticketing (osTicket) and asset management (Snipe-IT)",
+    "National-scale project — Led IT infrastructure for Bangladesh's first digital toll system with G.E.A. France",
+    "20% hardware cost reduction — Deployed VMware virtualization across servers",
+    "99.9% telephony uptime — Designed enterprise IP-PBX communication systems",
+    "15% efficiency gain — Optimized LAN/WAN architecture for toll collection operations",
   ];
 
   return (

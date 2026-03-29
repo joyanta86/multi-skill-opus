@@ -123,8 +123,8 @@ export const translations = {
       drivingLicense: "Finnish Driving License A & B",
     },
     contact: {
-      title: "Let's Connect",
-      subtitle: "Open to IT Support, System Administrator, and Infrastructure roles across Finland. Feel free to contact me.",
+      title: "Hire Me",
+      subtitle: "Open to IT Support and System Administrator roles across Finland. Contact me.",
       sendMessage: "Send Message",
       whatsappButton: "Message on WhatsApp",
     },
