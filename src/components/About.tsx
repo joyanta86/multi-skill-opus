@@ -31,7 +31,7 @@ export const About = () => {
                 <div className="flex flex-col md:flex-row gap-8 items-start">
                   <img 
                     src={profilePhoto} 
-                    alt="Joyanta Dey - IT Infrastructure & Support Specialist" 
+                    alt="Joyanta Dey - IT Infrastructure Specialist based in Finland" 
                     className="w-28 h-28 rounded-lg object-cover border border-border flex-shrink-0"
                   />
                   <div className="flex-1 space-y-4">
@@ -40,13 +40,6 @@ export const About = () => {
                     <p className="text-muted-foreground leading-relaxed text-[15px]">{t.about.description3}</p>
                     <p className="text-muted-foreground leading-relaxed text-[15px]">{t.about.description4}</p>
                   </div>
-                </div>
-
-                {/* Creative media & Finnish tech interest */}
-                <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-muted-foreground leading-relaxed text-sm italic">
-                    Beyond infrastructure, I bring a background in creative media and digital content — giving me a unique perspective on user-facing technology. I'm deeply interested in the Finnish tech landscape and excited to contribute to innovative teams building the future of Nordic IT.
-                  </p>
                 </div>
               </Card>
             </AnimatedSection>

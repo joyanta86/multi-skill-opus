@@ -30,15 +30,15 @@ export const Hero = () => {
       </div>
 
       <div className="container relative z-10 px-4">
-        <div className="max-w-3xl mx-auto text-center space-y-10">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
           <motion.div
-            className="flex justify-center mb-8"
+            className="flex justify-center mb-6"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
           >
             <Avatar className="h-28 w-28 border-2 border-primary/20 shadow-[var(--glow-primary)]">
-              <AvatarImage src={profilePhoto} alt="Joyanta Dey - IT Infrastructure & Support Specialist" />
+              <AvatarImage src={profilePhoto} alt="Joyanta Dey - IT Infrastructure Specialist based in Finland" />
               <AvatarFallback className="font-mono text-lg">JD</AvatarFallback>
             </Avatar>
           </motion.div>
@@ -49,14 +49,25 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
           >
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent tracking-tight">
+            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-primary bg-clip-text text-transparent tracking-tight">
               Joyanta Dey
             </h1>
-            <h2 className="text-lg md:text-xl font-medium text-foreground/90 max-w-2xl mx-auto tracking-tight">
+            <h2 className="text-base md:text-lg font-semibold text-foreground/90 max-w-3xl mx-auto tracking-tight">
               {t.hero.title}
             </h2>
-            <p className="text-base text-muted-foreground max-w-xl mx-auto font-mono text-sm">
+            <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto font-mono">
               {t.hero.subtitle}
+            </p>
+          </motion.div>
+
+          {/* Value Statement */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}
+          >
+            <p className="text-base md:text-lg text-foreground/80 max-w-2xl mx-auto font-medium italic">
+              "{t.hero.valueStatement}"
             </p>
           </motion.div>
 
@@ -64,7 +75,7 @@ export const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2"
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5, ease: 'easeOut' }}
+            transition={{ duration: 0.5, delay: 0.6, ease: 'easeOut' }}
           >
             <Button
               size="lg"
@@ -88,7 +99,7 @@ export const Hero = () => {
           </motion.div>
 
           <motion.div
-            className="pt-16"
+            className="pt-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
