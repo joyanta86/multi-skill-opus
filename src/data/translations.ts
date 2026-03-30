@@ -13,12 +13,12 @@ export const translations = {
     hero: {
       greeting: "",
       title: "IT Support Specialist | System Administrator | IT Infrastructure Engineer",
-      subtitle: "Based in Finland · Open to relocation · Available immediately · 12+ years in enterprise IT",
+      subtitle: "Based in Finland | Open to relocation across Finland | Available immediately",
       locationStatus: "",
       cta: "Contact Me",
       downloadCV: "Download CV",
       finnishIntro: "",
-      valueStatement: "I keep IT systems running. From Active Directory to firewalls, I solve problems fast and build infrastructure that lasts.",
+      valueStatement: "I design, support, and maintain secure, reliable, and scalable IT systems while delivering efficient end-user support.",
     },
     about: {
       title: "Professional Summary",
