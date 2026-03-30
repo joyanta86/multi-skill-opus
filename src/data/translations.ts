@@ -604,8 +604,8 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT-infrastrukturspecialist | Systemadministratör | IT-supportingenjör",
-      subtitle: "Baserad i Finland | Öppen för flytt inom Finland | 12+ års erfarenhet av IT-infrastruktur, nätverk och säkerhet",
+      title: "IT-supportspecialist | Systemadministratör | IT-infrastrukturingenjör | Felsökning",
+      subtitle: "Baserad i Finland (Kokkola) | Öppen för flytt inom Finland | Tillgänglig omedelbart",
       locationStatus: "",
       cta: "Kontakta mig",
       downloadCV: "Ladda ner CV",
