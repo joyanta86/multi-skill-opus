@@ -12,8 +12,8 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT Support Specialist | System Administrator | IT Infrastructure Engineer",
-      subtitle: "Based in Finland | Open to relocation across Finland | Available immediately",
+      title: "IT Support Specialist | System Administrator | IT Infrastructure Engineer | Troubleshooting",
+      subtitle: "Based in Finland (Kokkola) | Open to relocation across Finland | Available immediately",
       locationStatus: "",
       cta: "Contact Me",
       downloadCV: "Download CV",
