@@ -129,7 +129,7 @@ export const translations = {
       whatsappButton: "Message on WhatsApp",
     },
     footer: {
-      rights: "Based in Finland | Valid work permit | Open to IT Support, System Administrator & Infrastructure roles",
+      rights: "Based in Finland | Available immediately | Open to IT Support, System Administrator & Infrastructure roles",
       builtWith: "Built with React, TypeScript & Tailwind CSS",
     },
     cookies: {
