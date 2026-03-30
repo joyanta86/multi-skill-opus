@@ -15,12 +15,12 @@ export const Experience = () => {
       period: 'April 2021 - September 2024',
       headline: 'Drove enterprise infrastructure modernization and security transformation.',
       responsibilities: [
-        'Spearheaded Active Directory, Windows Server, and Linux infrastructure serving 500+ users across multiple sites',
-        'Architected high-availability IP telephony systems achieving 99.9% uptime',
-        'Deployed CrowdStrike EDR and managed Checkpoint/Fortinet firewalls in HA mode, reducing security incidents by 40%',
-        'Implemented IT Asset Management (Snipe-IT) and Ticketing Systems (osTicket), cutting support response times by 35%',
-        'Managed and mentored a team of 10+ IT professionals with structured training programs',
-        'Administered Microsoft 365 environment and Azure cloud services for enterprise operations',
+        'Managed Active Directory, Windows Server, and Linux for 500+ users across multiple sites',
+        'Achieved 99.9% uptime on IP telephony and high-availability systems',
+        'Reduced security incidents by 40% with CrowdStrike EDR and HA firewalls (Checkpoint, Fortinet)',
+        'Cut support response time by 35% deploying osTicket and Snipe-IT',
+        'Led and mentored a team of 10+ IT professionals',
+        'Administered Microsoft 365 and Azure cloud services',
       ],
     },
     {
