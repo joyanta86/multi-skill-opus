@@ -31,12 +31,12 @@ export const Experience = () => {
       period: 'September 2013 - April 2021',
       headline: 'Led IT infrastructure for Bangladesh\'s first digital toll collection system with G.E.A France.',
       responsibilities: [
-        'Designed and deployed end-to-end IT infrastructure for a national-scale toll management system',
-        'Partnered with G.E.A. France to implement Electronic Toll Collection (ETC) integrating CCTV, IP-PBX, and IoT devices',
+        'Built end-to-end IT infrastructure for a national-scale toll management system',
+        'Partnered with G.E.A. France on Electronic Toll Collection (CCTV, IP-PBX, IoT)',
         'Maintained 99.5% uptime across network, surveillance, and call center systems',
-        'Implemented virtualization technologies, reducing hardware costs by 20%',
-        'Strengthened data security with firewalls, VPNs, and endpoint protection — cutting incidents by 35%',
-        'Optimized LAN/WAN architecture, improving toll collection efficiency by 15%',
+        'Reduced hardware costs by 20% through server virtualization',
+        'Cut security incidents by 35% with firewalls, VPNs, and endpoint protection',
+        'Improved toll collection efficiency by 15% via LAN/WAN optimization',
       ],
     },
   ];
