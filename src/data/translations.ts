@@ -160,8 +160,8 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT-infrastruktuuriasiantuntija | Järjestelmänvalvoja | IT-tukiinsinööri",
-      subtitle: "Asun Suomessa | Avoin muuttamaan Suomen sisällä | 12+ vuoden kokemus IT-infrastruktuurista, verkkoista ja tietoturvasta",
+      title: "IT-tukiasiantuntija | Järjestelmänvalvoja | IT-infrastruktuuriinsinööri | Vianmääritys",
+      subtitle: "Suomessa (Kokkola) | Avoin muuttamaan Suomen sisällä | Heti käytettävissä",
       locationStatus: "",
       cta: "Ota yhteyttä",
       downloadCV: "Lataa CV",
