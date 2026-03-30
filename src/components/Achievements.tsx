@@ -7,14 +7,14 @@ export const Achievements = () => {
   const { t } = useLanguage();
 
   const achievements = [
-    "30% reliability increase — Redesigned enterprise IT infrastructure across multiple sites",
-    "40% fewer security incidents — Deployed CrowdStrike EDR + HA firewalls (Fortinet, Checkpoint)",
-    "25% less downtime — Implemented proactive monitoring with Zabbix and alerting systems",
-    "99.9% uptime — Maintained high-availability firewall and telephony systems",
-    "500+ users supported — Built and managed Active Directory, Group Policy, and Microsoft 365",
-    "35% faster support response — Deployed ticketing (osTicket) and asset management (Snipe-IT)",
-    "National-scale project — Led IT infrastructure for Bangladesh's first digital toll system",
-    "20% cost savings — Virtualized servers with VMware, reducing hardware spend",
+    "30% reliability increase — Enterprise infrastructure redesign across multiple sites",
+    "40% fewer security incidents — CrowdStrike EDR + HA firewalls (Fortinet, Checkpoint)",
+    "25% less downtime — Proactive monitoring with Zabbix and alerting",
+    "99.9% uptime — High-availability firewall and telephony systems",
+    "500+ users supported — Active Directory, Group Policy, Microsoft 365",
+    "35% faster support — Ticketing (osTicket) and asset management (Snipe-IT)",
+    "National-scale project — IT infrastructure for Bangladesh's first digital toll system",
+    "20% cost savings — Server virtualization with VMware",
   ];
 
   return (
