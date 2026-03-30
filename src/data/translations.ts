@@ -64,7 +64,7 @@ export const translations = {
       networkingList: [
         "TCP/IP, Routing & Switching",
         "LAN/WAN Design & Optimization",
-        "VLAN Configuration",
+        "DNS, DHCP, VLAN Configuration",
         "VPN Setup & Management",
         "Network Troubleshooting & Diagnostics",
       ],
