@@ -456,8 +456,8 @@ export const translations = {
     },
     hero: {
       greeting: "",
-      title: "IT-infrastrukturspesialist | Systemadministrator | IT-støtteingeniør",
-      subtitle: "Basert i Finland | Åpen for flytting i Finland | 12+ års erfaring med IT-infrastruktur, nettverk og sikkerhet",
+      title: "IT-støttespesialist | Systemadministrator | IT-infrastrukturingeniør | Feilsøking",
+      subtitle: "Basert i Finland (Kokkola) | Åpen for flytting i Finland | Tilgjengelig umiddelbart",
       locationStatus: "",
       cta: "Kontakt meg",
       downloadCV: "Last ned CV",
