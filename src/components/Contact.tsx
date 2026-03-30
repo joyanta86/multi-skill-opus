@@ -60,10 +60,10 @@ export const Contact = () => {
             <Card className="p-8 bg-card border-border">
               <div className="text-center space-y-5">
                 <p className="text-foreground font-bold text-lg">
-                  Open to IT Support and System Administrator roles across Finland.
+                  Open to IT Support, System Administrator, and Infrastructure roles across Finland.
                 </p>
                 <p className="text-muted-foreground text-[15px]">
-                  Available immediately. Let's talk.
+                  Available immediately. Feel free to contact me.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg"
