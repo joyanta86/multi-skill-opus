@@ -77,10 +77,10 @@ export const translations = {
       ],
       toolsList: [
         "Microsoft 365 Administration",
-        "Ticketing Systems (osTicket)",
+        "Ticketing (osTicket, ServiceNow)",
         "IT Asset Management (Snipe-IT)",
-        "PowerShell & Bash Scripting",
-        "Monitoring & Alerting Tools",
+        "Monitoring (Zabbix, PRTG)",
+        "VMware, PowerShell, Bash",
       ],
       languagesList: [
         "English – Professional Working Proficiency",
