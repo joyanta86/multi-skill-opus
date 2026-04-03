@@ -22,7 +22,7 @@ export const translations = {
     },
     about: {
       title: "Professional Summary",
-      description1: "12+ years in enterprise IT. I manage Active Directory, Windows Server, Microsoft 365, and cloud platforms (Azure, AWS). I troubleshoot fast and keep systems running.",
+      description1: "10+ years in enterprise IT. I manage Active Directory, Windows Server, Microsoft 365, and cloud platforms (Azure, AWS). I troubleshoot fast and keep systems running.",
       description2: "Hands-on with firewalls (Fortinet, Checkpoint), CrowdStrike EDR, and network infrastructure. 99.9% uptime. 40% fewer security incidents. 30% better system reliability.",
       description3: "Strong IT support background: end-user troubleshooting, ticketing (osTicket, ServiceNow), remote support (RDP, SSH, AnyDesk), incident handling, and Microsoft 365 administration.",
       description4: "Based in Kokkola, Finland. Valid work permit. Available immediately. Open to relocation anywhere in Finland.",
@@ -466,7 +466,7 @@ export const translations = {
     },
     about: {
       title: "Profesjonell oppsummering",
-      description1: "Resultatorientert IT-infrastrukturspesialist med 12+ års erfaring. Dyp kompetanse innen Active Directory, Windows Server, Microsoft 365 og skyplattformer som Azure og AWS.",
+      description1: "Resultatorientert IT-infrastrukturspesialist med 10+ års erfaring. Dyp kompetanse innen Active Directory, Windows Server, Microsoft 365 og skyplattformer som Azure og AWS.",
       description2: "Dokumentert erfaring med nettverksarkitektur, brannmuradministrasjon (Fortinet, Checkpoint) og endepunktsikkerhet (CrowdStrike).",
       description3: "Sterk problemløser med praktisk erfaring innen IT-tjenesteforvaltning, systemovervåking og infrastrukturdokumentasjon.",
       description4: "Basert i Finland med gyldig arbeidstillatelse. Tilgjengelig for umiddelbar start og åpen for flytting i hele Finland.",
@@ -614,7 +614,7 @@ export const translations = {
     },
     about: {
       title: "Professionell sammanfattning",
-      description1: "Resultatorienterad IT-infrastrukturspecialist med 12+ års erfarenhet. Djup kompetens inom Active Directory, Windows Server, Microsoft 365 och molnplattformar som Azure och AWS.",
+      description1: "Resultatorienterad IT-infrastrukturspecialist med 10+ års erfarenhet. Djup kompetens inom Active Directory, Windows Server, Microsoft 365 och molnplattformar som Azure och AWS.",
       description2: "Dokumenterad erfarenhet av nätverksarkitektur, brandväggshantering (Fortinet, Checkpoint) och slutpunktssäkerhet (CrowdStrike).",
       description3: "Stark problemlösare med praktisk erfarenhet av IT-tjänstehantering, systemövervakning och infrastrukturdokumentation.",
       description4: "Baserad i Finland med giltigt arbetstillstånd. Tillgänglig för omedelbar start och öppen för flytt inom Finland.",
