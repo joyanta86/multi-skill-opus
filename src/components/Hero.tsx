@@ -82,10 +82,10 @@ export const Hero = () => {
               className="gap-2.5 bg-primary hover:bg-primary/90 text-primary-foreground shadow-[var(--glow-primary)] hover:shadow-[0_0_40px_hsl(200_100%_50%/0.4)] transition-all duration-300 font-medium px-8"
               asChild
             >
-              <Link to="/resume">
+              <a href="/Joyanta_Dey_CV.pdf" download>
                 <Download className="h-5 w-5" />
                 {t.hero.downloadCV}
-              </Link>
+              </a>
             </Button>
             <Button
               size="lg"
