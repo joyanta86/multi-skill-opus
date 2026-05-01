@@ -49,6 +49,7 @@ export const Experience = () => {
         'Led and mentored a team of 10+ IT professionals',
         'Administered Microsoft 365 and Azure cloud services',
       ],
+      tags: [] as string[],
     },
     {
       title: 'IT Infrastructure Administrator',
@@ -65,6 +66,7 @@ export const Experience = () => {
         'Cut security incidents by 35% with firewalls, VPNs, and endpoint protection',
         'Improved toll collection efficiency by 15% via LAN/WAN optimization',
       ],
+      tags: [] as string[],
     },
   ];
 
