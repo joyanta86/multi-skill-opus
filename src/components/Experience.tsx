@@ -8,6 +8,33 @@ export const Experience = () => {
 
   const experiences = [
     {
+      title: 'IT Services Trainee (Harjoittelu)',
+      company: 'JNT Oy',
+      companyUrl: 'https://www.jnt.fi/',
+      location: 'Kokkola, Finland',
+      period: 'April 13, 2026 - April 24, 2026',
+      headline: 'Hands-on IT services training in a Finnish telecom & IT workplace.',
+      responsibilities: [
+        'Hands-on IT services training at JNT Oy — a local telecom and IT services company',
+        'Working with Microsoft 365 administration, helpdesk support, and IT operations',
+        'Operating under supervision in a Finnish IT workplace',
+      ],
+      tags: ['Microsoft 365', 'IT Support', 'Helpdesk', 'Windows Server', 'Active Directory'],
+    },
+    {
+      title: 'Work Practice (Harjoittelu) — Retail',
+      company: 'Halpahalli Oy',
+      companyUrl: 'https://www.halpahalli.fi/',
+      location: 'Kokkola, Finland',
+      period: 'November 17, 2024 - November 28, 2024',
+      headline: 'Two-week work practice within Finnish language integration programme.',
+      responsibilities: [
+        'Two-week work practice as part of Finnish language integration programme (Kvarnen / TE-toimisto)',
+        'Gained hands-on experience in Finnish retail and customer service environment',
+      ],
+      tags: ['Customer Service', 'Retail', 'Finnish Workplace'],
+    },
+    {
       title: 'Senior Assistant Manager, IT',
       company: 'General Pharmaceuticals Ltd.',
       companyUrl: 'https://generalpharma.com/',
@@ -22,6 +49,7 @@ export const Experience = () => {
         'Led and mentored a team of 10+ IT professionals',
         'Administered Microsoft 365 and Azure cloud services',
       ],
+      tags: [] as string[],
     },
     {
       title: 'IT Infrastructure Administrator',
@@ -38,6 +66,7 @@ export const Experience = () => {
         'Cut security incidents by 35% with firewalls, VPNs, and endpoint protection',
         'Improved toll collection efficiency by 15% via LAN/WAN optimization',
       ],
+      tags: [] as string[],
     },
   ];
 
@@ -96,6 +125,19 @@ export const Experience = () => {
                           </li>
                         ))}
                       </ul>
+
+                      {exp.tags && exp.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-2 pt-1">
+                          {exp.tags.map((tag, tagIndex) => (
+                            <span
+                              key={tagIndex}
+                              className="text-xs font-mono px-2.5 py-1 rounded-md bg-primary/10 text-primary/90 border border-primary/20"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </Card>
                 </StaggerItem>

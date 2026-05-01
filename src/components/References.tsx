@@ -12,6 +12,16 @@ export const References = () => {
 
   const references = [
     {
+      name: 'Samu Penttilä',
+      title: 'Team Leader Kokkola – IT-palvelut | Järjestelmäasiantuntija',
+      company: 'JNT Oy',
+      description: 'Direct supervisor during IT Services Harjoittelu at JNT Kokkola. Oversees IT support operations and services for business clients in the Kokkola region.',
+      email: 'samu.penttila@jnt.fi',
+      phone: '040 487 5858',
+      website: 'https://www.jnt.fi/',
+      photo: 'https://www.jnt.fi/app/uploads/2024/08/samu-260x260px.png',
+    },
+    {
       name: 'Saiful Islam',
       title: 'IT Support Specialist',
       company: 'Tiefenbacher Group',
