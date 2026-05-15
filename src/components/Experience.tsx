@@ -15,11 +15,11 @@ export const Experience = () => {
       period: 'April 13, 2026 - April 24, 2026',
       headline: 'Hands-on IT services training in a Finnish telecom & IT workplace.',
       responsibilities: [
-        'Hands-on IT services training at JNT Oy — a local telecom and IT services company',
-        'Working with Microsoft 365 administration, helpdesk support, and IT operations',
-        'Operating under supervision in a Finnish IT workplace',
+        'Worked within the IT team participating in helpdesk tasks and daily technical support',
+        'Performed problem-solving and contributed to ongoing technical development work',
+        'Repaired and maintained customer devices, implementing practical solutions hands-on',
       ],
-      tags: ['Microsoft 365', 'IT Support', 'Helpdesk', 'Windows Server', 'Active Directory'],
+      tags: ['Helpdesk', 'Technical Support', 'Device Repair', 'Problem Solving', 'IT Operations'],
     },
     {
       title: 'Work Practice (Harjoittelu) — Retail',
