@@ -84,7 +84,7 @@ export const translations = {
       ],
       languagesList: [
         "English – Professional Working Proficiency",
-        "Finnish – A2 Elementary (Actively Learning)",
+        "Finnish – A2+ (between A2 and B1, targeting B1)",
         "Bengali – Native Speaker",
       ],
     },
@@ -232,7 +232,7 @@ export const translations = {
       ],
       languagesList: [
         "Englanti – Ammattitasoinen",
-        "Suomi – A2 Alkeistaso (Opiskelun alla)",
+        "Suomi – A2+ (A2:n ja B1:n välillä, tavoitteena B1)",
         "Bengali – Äidinkieli",
       ],
     },
@@ -380,7 +380,7 @@ export const translations = {
       ],
       languagesList: [
         "ইংরেজি – পেশাদার",
-        "ফিনিশ – A2 প্রাথমিক (শিখছি)",
+        "ফিনিশ – A2+ (A2 ও B1-এর মাঝামাঝি, লক্ষ্য B1)",
         "বাংলা – মাতৃভাষা",
       ],
     },
@@ -528,7 +528,7 @@ export const translations = {
       ],
       languagesList: [
         "Engelsk – Flytende",
-        "Finsk – A2 Grunnleggende (Lærer)",
+        "Finsk – A2+ (mellom A2 og B1, mål B1)",
         "Bengali – Morsmål",
       ],
     },
@@ -676,7 +676,7 @@ export const translations = {
       ],
       languagesList: [
         "Engelska – Professionell",
-        "Finska – A2 Grundläggande (Lär sig)",
+        "Finska – A2+ (mellan A2 och B1, mål B1)",
         "Bengali – Modersmål",
       ],
     },
