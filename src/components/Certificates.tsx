@@ -15,6 +15,7 @@ import oracle from '@/assets/certificates/thumb_Oracle_Cloud-1.jpg';
 import gea from '@/assets/certificates/thumb_GEA-1.jpg';
 import powerbi from '@/assets/certificates/thumb_PowerBI-1.jpg';
 import trainocate from '@/assets/certificates/thumb_Trainocate-1.jpg';
+import tyotodistus from '@/assets/certificates/thumb_Tyotodistus-1.jpg';
 
 interface Certificate {
   title: string;
@@ -35,6 +36,7 @@ const certificates: Certificate[] = [
   { title: 'ISO Training Certificate', issuer: 'ISO', thumb: iso, pdf: '/certificates/ISO_Training.pdf' },
   { title: 'Job Experience — General Pharmaceuticals Ltd.', issuer: 'General Pharmaceuticals Ltd.', thumb: gpl, pdf: '/certificates/Job_General_Pharmaceuticals.pdf' },
   { title: 'Job Experience — Orion Infrastructure Ltd.', issuer: 'Orion Infrastructure Ltd.', thumb: orion, pdf: '/certificates/Job_Orion_Infrastructure.pdf' },
+  { title: 'Työtodistus — Halpahalli Oy', issuer: 'Halpahalli Oy (Finland)', thumb: tyotodistus, pdf: '/certificates/Tyotodistus_Halpahalli.pdf' },
 ];
 
 export const Certificates = () => {
