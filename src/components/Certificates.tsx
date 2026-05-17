@@ -12,6 +12,9 @@ import mtcna from '@/assets/certificates/thumb_MTCNA-1.jpg';
 import mtcre from '@/assets/certificates/thumb_MTCRE-1.jpg';
 import niit from '@/assets/certificates/thumb_NIIT-1.jpg';
 import oracle from '@/assets/certificates/thumb_Oracle_Cloud-1.jpg';
+import gea from '@/assets/certificates/thumb_GEA-1.jpg';
+import powerbi from '@/assets/certificates/thumb_PowerBI-1.jpg';
+import trainocate from '@/assets/certificates/thumb_Trainocate-1.jpg';
 
 interface Certificate {
   title: string;
@@ -25,6 +28,9 @@ const certificates: Certificate[] = [
   { title: 'MikroTik Certified Network Associate', issuer: 'MikroTik (MTCNA)', thumb: mtcna, pdf: '/certificates/MTCNA.pdf' },
   { title: 'MikroTik Certified Routing Engineer', issuer: 'MikroTik (MTCRE)', thumb: mtcre, pdf: '/certificates/MTCRE.pdf' },
   { title: 'Oracle Cloud Infrastructure', issuer: 'Oracle', thumb: oracle, pdf: '/certificates/Oracle_Cloud.pdf' },
+  { title: 'Microsoft Power BI Certificate', issuer: 'Microsoft', thumb: powerbi, pdf: '/certificates/PowerBI.pdf' },
+  { title: 'Trainocate Professional Certificate', issuer: 'Trainocate', thumb: trainocate, pdf: '/certificates/Trainocate.pdf' },
+  { title: 'GEA Training Certificate', issuer: 'GEA', thumb: gea, pdf: '/certificates/GEA.pdf' },
   { title: 'NIIT Professional Training', issuer: 'NIIT', thumb: niit, pdf: '/certificates/NIIT.pdf' },
   { title: 'ISO Training Certificate', issuer: 'ISO', thumb: iso, pdf: '/certificates/ISO_Training.pdf' },
   { title: 'Job Experience — General Pharmaceuticals Ltd.', issuer: 'General Pharmaceuticals Ltd.', thumb: gpl, pdf: '/certificates/Job_General_Pharmaceuticals.pdf' },
