@@ -60,31 +60,50 @@ export const Certificates = () => {
             <p className="text-center text-muted-foreground text-sm font-mono mb-8">
               Verified credentials, training certificates, and employment letters
             </p>
-            <div className="flex flex-wrap justify-center gap-2 mb-12">
-              {filters.map((f) => (
-                <button
-                  key={f}
-                  onClick={() => setFilter(f)}
-                  className={`px-4 py-2 rounded-full text-xs font-mono uppercase tracking-wider border transition-all duration-300 ${
-                    filter === f
-                      ? 'bg-primary text-primary-foreground border-primary shadow-md'
-                      : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-foreground'
-                  }`}
-                >
-                  {f}
-                </button>
-              ))}
+            <div
+              className="flex flex-wrap justify-center gap-2 mb-12"
+              role="tablist"
+              aria-label="Filter certificates by category"
+            >
+              {filters.map((f) => {
+                const isActive = filter === f;
+                return (
+                  <button
+                    key={f}
+                    role="tab"
+                    aria-selected={isActive}
+                    aria-controls="certificates-grid"
+                    onClick={() => setFilter(f)}
+                    className={`px-4 py-2 rounded-full text-xs font-mono uppercase tracking-wider border transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
+                      isActive
+                        ? 'bg-primary text-primary-foreground border-primary shadow-md'
+                        : 'bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-foreground'
+                    }`}
+                  >
+                    {f}
+                  </button>
+                );
+              })}
             </div>
           </AnimatedSection>
 
-          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <StaggerContainer
+            id="certificates-grid"
+            role="list"
+            aria-label={`${visible.length} certificates${filter === 'All' ? '' : ` in ${filter}`}`}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
             {visible.map((cert) => (
               <StaggerItem key={cert.pdf}>
-                <Card className="group overflow-hidden bg-card border-border hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col">
+                <Card
+                  role="listitem"
+                  className="group overflow-hidden bg-card border-border hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1.5 focus-within:border-primary focus-within:shadow-xl focus-within:shadow-primary/10 focus-within:-translate-y-1.5 transition-all duration-300 h-full flex flex-col"
+                >
                   <button
+                    type="button"
                     onClick={() => setActive(cert)}
-                    className="relative aspect-[3/4] bg-muted overflow-hidden block"
-                    aria-label={`Preview ${cert.title}`}
+                    className="relative aspect-[3/4] bg-muted overflow-hidden block w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
+                    aria-label={`Preview ${cert.title} certificate from ${cert.issuer}`}
                   >
                     <img
                       src={cert.thumb}
@@ -92,29 +111,38 @@ export const Certificates = () => {
                       loading="lazy"
                       className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700 ease-out"
                     />
-                    <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-background/85 backdrop-blur text-[10px] font-mono uppercase tracking-wider text-foreground border border-border">
+                    <div
+                      className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-background/85 backdrop-blur text-[10px] font-mono uppercase tracking-wider text-foreground border border-border"
+                      aria-hidden="true"
+                    >
                       {cert.category}
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div
+                      className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/0 to-transparent opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity"
+                      aria-hidden="true"
+                    />
                   </button>
                   <div className="p-5 flex-1 flex flex-col gap-2">
                     <h3 className="text-lg font-bold text-foreground leading-tight tracking-tight line-clamp-2 min-h-[3.5rem]">
                       {cert.title}
                     </h3>
-                    <p className="text-xs text-muted-foreground/80 font-mono line-clamp-1">{cert.issuer}</p>
+                    <p className="text-xs text-muted-foreground font-mono line-clamp-1">{cert.issuer}</p>
                     <div className="mt-auto pt-4 grid grid-cols-2 gap-2">
                       <button
+                        type="button"
                         onClick={() => setActive(cert)}
-                        className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-md text-xs font-mono bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+                        aria-label={`View ${cert.title}`}
+                        className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-md text-xs font-mono bg-primary text-primary-foreground hover:bg-primary/90 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-card"
                       >
-                        <Eye className="h-3.5 w-3.5" /> View
+                        <Eye className="h-3.5 w-3.5" aria-hidden="true" /> View
                       </button>
                       <a
                         href={cert.pdf}
                         download
-                        className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-md text-xs font-mono border border-border text-foreground hover:border-primary hover:text-primary transition-colors"
+                        aria-label={`Download ${cert.title} PDF`}
+                        className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-md text-xs font-mono border border-border text-foreground hover:border-primary hover:text-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-card"
                       >
-                        <Download className="h-3.5 w-3.5" /> Download
+                        <Download className="h-3.5 w-3.5" aria-hidden="true" /> Download
                       </a>
                     </div>
                   </div>
@@ -126,13 +154,17 @@ export const Certificates = () => {
       </div>
 
       <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
-        <DialogContent className="max-w-5xl w-[95vw] h-[90vh] p-0 overflow-hidden">
+        <DialogContent
+          className="max-w-5xl w-[95vw] h-[90vh] p-0 overflow-hidden"
+          aria-label={active ? `${active.title} certificate preview` : 'Certificate preview'}
+        >
           <button
+            type="button"
             onClick={() => setActive(null)}
-            className="absolute right-3 top-3 z-10 p-2 rounded-md bg-background/80 backdrop-blur hover:bg-background border border-border"
-            aria-label="Close"
+            className="absolute right-3 top-3 z-10 p-2 rounded-md bg-background/80 backdrop-blur hover:bg-background border border-border focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            aria-label="Close certificate preview"
           >
-            <X className="h-4 w-4" />
+            <X className="h-4 w-4" aria-hidden="true" />
           </button>
           {active && (
             <iframe
