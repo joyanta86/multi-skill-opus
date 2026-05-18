@@ -87,13 +87,13 @@ export const Certificates = () => {
             </div>
           </AnimatedSection>
 
-          <StaggerContainer
+          <div
             id="certificates-grid"
             role="list"
             aria-label={`${visible.length} certificates${filter === 'All' ? '' : ` in ${filter}`}`}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {visible.map((cert) => (
+            <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {visible.map((cert) => (
               <StaggerItem key={cert.pdf}>
                 <Card
                   role="listitem"
@@ -148,8 +148,9 @@ export const Certificates = () => {
                   </div>
                 </Card>
               </StaggerItem>
-            ))}
-          </StaggerContainer>
+              ))}
+            </StaggerContainer>
+          </div>
         </div>
       </div>
 
