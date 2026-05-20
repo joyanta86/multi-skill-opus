@@ -9,89 +9,84 @@
 
 @layer base {
   :root {
-    --background: 220 20% 7%;
-    --foreground: 210 20% 92%;
+    /* Navy Trust palette
+       #0f1b3d deep navy bg, #1e3a5f mid navy, #3b6fa0 accent blue, #e8edf3 light text */
+    --background: 222 60% 15%;
+    --foreground: 218 25% 93%;
 
-    --card: 220 18% 11%;
-    --card-foreground: 210 20% 92%;
+    --card: 215 52% 24%;
+    --card-foreground: 218 25% 93%;
 
-    --popover: 220 18% 9%;
-    --popover-foreground: 210 20% 92%;
+    --popover: 222 60% 12%;
+    --popover-foreground: 218 25% 93%;
 
-    --primary: 200 100% 50%;
-    --primary-foreground: 220 20% 7%;
+    --primary: 210 46% 43%;
+    --primary-foreground: 218 25% 97%;
 
-    --secondary: 215 25% 18%;
-    --secondary-foreground: 210 20% 85%;
+    --secondary: 215 52% 24%;
+    --secondary-foreground: 218 25% 90%;
 
-    --muted: 220 15% 14%;
-    --muted-foreground: 215 15% 55%;
+    --muted: 215 45% 20%;
+    --muted-foreground: 215 25% 70%;
 
-    --accent: 195 80% 45%;
-    --accent-foreground: 220 20% 7%;
+    --accent: 210 46% 43%;
+    --accent-foreground: 218 25% 97%;
 
     --destructive: 0 72% 55%;
-    --destructive-foreground: 210 20% 92%;
+    --destructive-foreground: 218 25% 97%;
 
-    --border: 220 12% 18%;
-    --input: 220 15% 14%;
-    --ring: 200 100% 50%;
+    --border: 215 40% 28%;
+    --input: 215 45% 20%;
+    --ring: 210 46% 43%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    /* Custom design tokens — Nordic minimalist */
-    --gradient-primary: linear-gradient(135deg, hsl(200 100% 50%), hsl(195 80% 45%));
-    --gradient-accent: linear-gradient(90deg, hsl(195 80% 45%), hsl(200 100% 50%));
-    --gradient-dark: linear-gradient(180deg, hsl(220 20% 7%), hsl(220 20% 5%));
-    --glow-primary: 0 0 30px hsl(200 100% 50% / 0.2);
-    --glow-accent: 0 0 20px hsl(195 80% 45% / 0.25);
-    --glass-bg: hsl(220 18% 11% / 0.6);
-    --glass-border: hsl(210 20% 92% / 0.06);
-
-    /* Light mode tokens */
-    --background-light: 210 20% 98%;
-    --foreground-light: 220 20% 12%;
-    --card-light: 0 0% 100%;
-    --muted-light: 210 15% 94%;
-    --border-light: 220 12% 88%;
+    /* Custom design tokens — Navy Trust */
+    --gradient-primary: linear-gradient(135deg, hsl(210 46% 43%), hsl(215 52% 30%));
+    --gradient-accent: linear-gradient(90deg, hsl(210 46% 43%), hsl(218 25% 93%));
+    --gradient-dark: linear-gradient(180deg, hsl(222 60% 15%), hsl(222 65% 10%));
+    --glow-primary: 0 0 30px hsl(210 46% 43% / 0.25);
+    --glow-accent: 0 0 20px hsl(210 46% 43% / 0.25);
+    --glass-bg: hsl(215 52% 24% / 0.6);
+    --glass-border: hsl(218 25% 93% / 0.08);
   }
 
   .light {
-    --background: 210 20% 98%;
-    --foreground: 220 20% 12%;
+    --background: 218 35% 97%;
+    --foreground: 222 60% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 12%;
+    --card-foreground: 222 60% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 12%;
+    --popover-foreground: 222 60% 15%;
 
-    --primary: 200 100% 42%;
+    --primary: 215 52% 30%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 15% 94%;
-    --secondary-foreground: 220 20% 25%;
+    --secondary: 218 30% 92%;
+    --secondary-foreground: 215 52% 24%;
 
-    --muted: 210 15% 94%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 218 30% 92%;
+    --muted-foreground: 215 25% 40%;
 
-    --accent: 195 75% 38%;
+    --accent: 210 46% 43%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 12% 88%;
-    --input: 210 15% 94%;
-    --ring: 200 100% 42%;
+    --border: 218 25% 85%;
+    --input: 218 30% 92%;
+    --ring: 215 52% 30%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(200 100% 42%), hsl(195 75% 38%));
-    --gradient-accent: linear-gradient(90deg, hsl(195 75% 38%), hsl(200 100% 42%));
-    --gradient-dark: linear-gradient(180deg, hsl(210 20% 98%), hsl(210 20% 96%));
-    --glow-primary: 0 0 30px hsl(200 100% 42% / 0.15);
-    --glow-accent: 0 0 20px hsl(195 75% 38% / 0.15);
+    --gradient-primary: linear-gradient(135deg, hsl(215 52% 30%), hsl(210 46% 43%));
+    --gradient-accent: linear-gradient(90deg, hsl(210 46% 43%), hsl(215 52% 30%));
+    --gradient-dark: linear-gradient(180deg, hsl(218 35% 97%), hsl(218 30% 94%));
+    --glow-primary: 0 0 30px hsl(215 52% 30% / 0.15);
+    --glow-accent: 0 0 20px hsl(210 46% 43% / 0.15);
     --glass-bg: hsl(0 0% 100% / 0.7);
-    --glass-border: hsl(220 20% 12% / 0.06);
+    --glass-border: hsl(222 60% 15% / 0.06);
   }
 }
 
@@ -101,9 +96,10 @@
   }
 
   html {
-    font-family: 'Inter', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -112,10 +108,10 @@
     line-height: 1.6;
   }
 
-  /* Nordic minimalist typography scale */
   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
     letter-spacing: -0.025em;
-    line-height: 1.2;
+    line-height: 1.1;
   }
 }
 
