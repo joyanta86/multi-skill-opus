@@ -51,16 +51,16 @@ export const Hero = () => {
               <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
                 Joyanta <span className="text-primary">Dey</span>
               </h1>
-              <p className="text-lg md:text-xl text-foreground/85 font-medium border-l-4 border-primary pl-4">
+              <p className="text-lg md:text-xl text-foreground font-medium border-l-4 border-primary pl-4">
                 IT Specialist & System Administrator
-                <span className="block text-foreground/60 text-base mt-1">
+                <span className="block text-foreground/80 text-base mt-1">
                   Finland (Kokkola) · Open to Relocation
                 </span>
               </p>
             </div>
 
             {/* Description */}
-            <p className="text-foreground/75 leading-relaxed max-w-lg">
+            <p className="text-foreground/90 leading-relaxed max-w-lg">
               {t.hero.valueStatement}
             </p>
 
@@ -69,7 +69,7 @@ export const Hero = () => {
               {TECH_CHIPS.map((chip) => (
                 <span
                   key={chip}
-                  className="px-3 py-1 bg-card border border-primary/20 rounded-md text-xs font-semibold uppercase tracking-wider text-foreground/80"
+                  className="px-3 py-1 bg-card border border-primary/30 rounded-md text-xs font-semibold uppercase tracking-wider text-foreground"
                 >
                   {chip}
                 </span>
@@ -101,7 +101,7 @@ export const Hero = () => {
             <div className="pt-6 flex flex-wrap gap-x-6 gap-y-3 border-t border-border">
               <a
                 href="mailto:joyanta.it@gmail.com"
-                className="flex items-center gap-2 text-sm text-foreground/65 hover:text-primary transition-colors group"
+                className="flex items-center gap-2 text-sm text-foreground/90 hover:text-primary transition-colors group"
                 aria-label="Send email"
               >
                 <Mail className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" aria-hidden="true" />
@@ -111,7 +111,7 @@ export const Hero = () => {
                 href="https://www.linkedin.com/in/joyantadey/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-foreground/65 hover:text-primary transition-colors group"
+                className="flex items-center gap-2 text-sm text-foreground/90 hover:text-primary transition-colors group"
                 aria-label="LinkedIn profile"
               >
                 <Linkedin className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" aria-hidden="true" />
@@ -119,7 +119,7 @@ export const Hero = () => {
               </a>
               <a
                 href="tel:+358465791195"
-                className="flex items-center gap-2 text-sm text-foreground/65 hover:text-primary transition-colors group"
+                className="flex items-center gap-2 text-sm text-foreground/90 hover:text-primary transition-colors group"
                 aria-label="Call phone number"
               >
                 <Phone className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" aria-hidden="true" />
