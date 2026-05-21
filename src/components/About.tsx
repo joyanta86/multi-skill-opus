@@ -2,7 +2,7 @@ import { MapPin, Mail, Phone, Linkedin, Car } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/motion/AnimatedSection';
-import profilePhoto from '@/assets/profile-photo.jpg';
+import profilePhoto from '@/assets/profile-photo.webp';
 
 export const About = () => {
   const { t } = useLanguage();

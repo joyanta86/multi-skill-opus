@@ -1,7 +1,7 @@
 import { Download, Mail, Linkedin, Phone, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { motion } from 'framer-motion';
-import profilePhoto from '@/assets/profile-photo.jpg';
+import profilePhoto from '@/assets/profile-photo.webp';
 
 const TECH_CHIPS = ['Azure / M365', 'Networking', 'Active Directory', 'Hardware Support'];
 

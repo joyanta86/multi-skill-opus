@@ -3,9 +3,9 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/motion/AnimatedSection';
-import jennyPhoto from '@/assets/jenny-pulkkinen.jpg';
-import saifulPhoto from '@/assets/saiful-islam.jpg';
-import ashikPhoto from '@/assets/ashik-hasan.jpg';
+import jennyPhoto from '@/assets/jenny-pulkkinen.webp';
+import saifulPhoto from '@/assets/saiful-islam.webp';
+import ashikPhoto from '@/assets/ashik-hasan.webp';
 
 export const References = () => {
   const { t } = useLanguage();
