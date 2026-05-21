@@ -109,6 +109,9 @@ export const Certificates = () => {
                       src={cert.thumb}
                       alt={cert.title}
                       loading="lazy"
+                      decoding="async"
+                      width={400}
+                      height={533}
                       className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700 ease-out"
                     />
                     <div

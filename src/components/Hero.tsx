@@ -145,6 +145,9 @@ export const Hero = () => {
                     alt="Joyanta Dey — IT Infrastructure Specialist based in Finland"
                     loading="eager"
                     fetchPriority="high"
+                    decoding="async"
+                    width={384}
+                    height={384}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" aria-hidden="true" />

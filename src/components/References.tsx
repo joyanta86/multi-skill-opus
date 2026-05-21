@@ -68,9 +68,13 @@ export const References = () => {
               <StaggerItem key={index}>
                 <Card className="p-4 sm:p-5 bg-card border-border hover:border-primary/30 transition-all duration-500 ease-out group h-full hover:shadow-[var(--glow-primary)] hover:-translate-y-1">
                   <div className="flex items-start gap-3 mb-3">
-                    <img 
-                      src={reference.photo} 
-                      alt={reference.name}
+                    <img
+                      src={reference.photo}
+                      alt={`${reference.name} — ${reference.title}`}
+                      loading="lazy"
+                      decoding="async"
+                      width={44}
+                      height={44}
                       className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg object-cover border border-border flex-shrink-0 transition-transform duration-500 ease-out group-hover:scale-105"
                     />
                     <div className="flex-1 min-w-0">
