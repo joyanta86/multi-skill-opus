@@ -2,7 +2,7 @@ import { MapPin, Mail, Phone, Linkedin, Car } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/motion/AnimatedSection';
-import profilePhoto from '@/assets/profile-photo.jpg';
+import profilePhoto from '@/assets/profile-photo.webp';
 
 export const About = () => {
   const { t } = useLanguage();
@@ -29,9 +29,13 @@ export const About = () => {
             <AnimatedSection className="md:col-span-2" delay={0.1} direction="left">
               <Card className="p-8 bg-card border-border hover:border-primary/30 transition-colors duration-300">
                 <div className="flex flex-col md:flex-row gap-8 items-start">
-                  <img 
-                    src={profilePhoto} 
-                    alt="Joyanta Dey - IT Infrastructure Specialist based in Finland" 
+                  <img
+                    src={profilePhoto}
+                    alt="Joyanta Dey - IT Infrastructure Specialist based in Finland"
+                    loading="lazy"
+                    decoding="async"
+                    width={112}
+                    height={112}
                     className="w-28 h-28 rounded-lg object-cover border border-border flex-shrink-0"
                   />
                   <div className="flex-1 space-y-4">

@@ -4,18 +4,18 @@ import { Card } from '@/components/ui/card';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { AnimatedSection, StaggerContainer, StaggerItem } from '@/components/motion/AnimatedSection';
 
-import bsc from '@/assets/certificates/thumb_BSc_Certificate-1.jpg';
-import iso from '@/assets/certificates/thumb_ISO_Training-1.jpg';
-import gpl from '@/assets/certificates/thumb_Job_General_Pharmaceuticals-1.jpg';
-import orion from '@/assets/certificates/thumb_Job_Orion_Infrastructure-1.jpg';
-import mtcna from '@/assets/certificates/thumb_MTCNA-1.jpg';
-import mtcre from '@/assets/certificates/thumb_MTCRE-1.jpg';
-import niit from '@/assets/certificates/thumb_NIIT-1.jpg';
-import oracle from '@/assets/certificates/thumb_Oracle_Cloud-1.jpg';
-import gea from '@/assets/certificates/thumb_GEA-1.jpg';
-import powerbi from '@/assets/certificates/thumb_PowerBI-1.jpg';
-import trainocate from '@/assets/certificates/thumb_Trainocate-1.jpg';
-import tyotodistus from '@/assets/certificates/thumb_Tyotodistus-1.jpg';
+import bsc from '@/assets/certificates/thumb_BSc_Certificate-1.webp';
+import iso from '@/assets/certificates/thumb_ISO_Training-1.webp';
+import gpl from '@/assets/certificates/thumb_Job_General_Pharmaceuticals-1.webp';
+import orion from '@/assets/certificates/thumb_Job_Orion_Infrastructure-1.webp';
+import mtcna from '@/assets/certificates/thumb_MTCNA-1.webp';
+import mtcre from '@/assets/certificates/thumb_MTCRE-1.webp';
+import niit from '@/assets/certificates/thumb_NIIT-1.webp';
+import oracle from '@/assets/certificates/thumb_Oracle_Cloud-1.webp';
+import gea from '@/assets/certificates/thumb_GEA-1.webp';
+import powerbi from '@/assets/certificates/thumb_PowerBI-1.webp';
+import trainocate from '@/assets/certificates/thumb_Trainocate-1.webp';
+import tyotodistus from '@/assets/certificates/thumb_Tyotodistus-1.webp';
 
 interface Certificate {
   title: string;
@@ -109,6 +109,9 @@ export const Certificates = () => {
                       src={cert.thumb}
                       alt={cert.title}
                       loading="lazy"
+                      decoding="async"
+                      width={400}
+                      height={533}
                       className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700 ease-out"
                     />
                     <div
