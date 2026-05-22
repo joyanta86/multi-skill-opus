@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://multi-skill-opus.lovable.app/sitemap.xml
+Sitemap: https://joyanta.fi/sitemap.xml
